@@ -1,0 +1,28 @@
+To create a "flat" CTAN package:
+
+  cd to inter, the directory containing the texmf tree
+  mkdir doc enc map latex opentype type1 tfm vf
+  cd doc
+  ln -s ../texmf/doc/fonts/inter/* .
+  rm README  (because it would duplicate the top-level README)
+  cd ../enc
+  ln -s ../texmf/fonts/enc/dvips/inter/* .
+  cd ../map
+  ln -s ../texmf/fonts/map/dvips/inter/* .
+  cd ../latex
+  ln -s ../texmf/tex/latex/inter/* .
+  cd ../opentype
+  ln -s ../texmf/fonts/opentype/public/inter/* .
+  cd ../type1
+  ln -s ../texmf/fonts/type1/public/inter/* .
+  cd ../tfm
+  ln -s ../texmf/fonts/tfm/public/inter/* .
+  cd ../vf
+  ln -s ../texmf/fonts/vf/public/inter/* .
+  mv texmf/inter.tds.zip ..
+  cd ../..
+  zip -r inter.zip inter/README inter.tds.zip inter/doc inter/enc inter/map inter/latex inter/opentype inter/type1 inter/tfm inter/vf
+
+Now inter.zip can be uploaded to CTAN.
+
+  

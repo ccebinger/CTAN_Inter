@@ -1,0 +1,605 @@
+Downloaded
+
+  README.md
+  Inter-3.15.zip
+
+from https://github.com/rsms/inter/
+
+  unzip Inter-3.15.zip
+
+Copied Inter Desktop/Inter-*.otf to a working directory.
+
+  otfinfo -f Inter-Regular.otf
+
+to see what features are available (and which features are
+*not*). The Inter fonts provide proportional and tabular
+figures (presumably lining), subscripts and superscripts.
+
+The License does not reserve the Inter font name so it won't
+be necessary to re-name the (derived) fonts.
+
+  autoinst -target=texmf -vendor=public -typeface=inter -encoding=OT1,T1,TS1,LY1 *.otf
+
+inter.log tells us:
+
+NFSS mappings:
+
+    ul  =>  thin
+    el  =>  extralight
+    l   =>  light
+    sl  =>  
+    m   =>  regular
+    sb  =>  semibold
+    b   =>  bold
+    eb  =>  extrabold
+    ub  =>  black
+
+    uc  =>  
+    ec  =>  
+    c   =>  
+    sc  =>  
+    m   =>  regular
+    sx  =>  
+    x   =>  
+    ex  =>  
+    ux  =>  
+
+Note that there is no mapping for Medium (because m is
+mapped to Regular).
+
+Check that pfbs are generated in
+texmf/fonts/type1/public/inter (otftotfm sometimes fails to
+do that).
+
+  mkdir -p texmf/fonts/opentype/public/inter
+
+  cp *.otf texmf/fonts/opentype/public/inter
+
+  zip -r inter.tds.zip fonts tex
+  mv inter.tds.zip ~/texmf
+  cd ~/texmf
+  unzip inter.tds.zip
+  texhash .
+  updmap-user --enable Map Inter.map
+
+I now create a rudimentary test file inter-samples.tex and
+check that all is well:
+
+_________________________________________________________
+
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{Inter}
+\usepackage{lipsum}
+\begin{document}
+
+\subsection*{Regular}
+\lipsum[1]
+
+
+\subsection*{Bold}
+
+\textbf{\lipsum[2]}
+
+
+\subsection*{Italic}
+
+\textit{\lipsum[3]}
+
+\subsection*{Bold Italic}
+
+
+\textbf{\textit{\lipsum[4]}}
+
+\subsection*{Default Numbers}
+
+1234567890
+
+\subsection*{Superscripts}
+
+X{\sufigures 1234567890}
+
+\end{document}
+
+_______________________________________________________
+
+
+I now create a more refined style file inter.sty which is
+to replace the autoinst-generated Inter.sty:
+
+___________________________________________________________________________
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{inter}
+    [2020/12/13 (Bob Tennent and autoinst)  Style file for Inter fonts.]
+
+\RequirePackage{iftex,xkeyval,textcomp}
+
+\newif\ifinter@tabular \inter@tabularfalse
+
+\newif\ifinter@medium  \inter@mediumfalse
+\newif\ifinter@semibold  \inter@semiboldfalse
+\newif\ifinter@extrabold  \inter@extraboldfalse
+\newif\ifinter@heavy  \inter@heavyfalse
+\newif\ifinter@light  \inter@lightfalse
+\newif\ifinter@extralight  \inter@extralightfalse
+\newif\ifinter@thin  \inter@thinfalse
+\newif\ifinter@default \inter@defaultfalse
+
+\newcommand*{\Inter@scale}{1}
+\RequirePackage{xkeyval}
+\DeclareOptionX{scaled}{\renewcommand*{\Inter@scale}{#1}}
+\DeclareOptionX{scale}{\renewcommand*{\Inter@scale}{#1}}
+\DeclareOptionX{type1}{\inter@otffalse}
+\DeclareOptionX{lining}{\inter@liningtrue}
+\DeclareOptionX{tabular}{\inter@tabulartrue}
+\DeclareOptionX{t}{\inter@tabulartrue}
+
+\DeclareOptionX{medium}{\inter@mediumtrue}
+\DeclareOptionX{mb}{\inter@mediumtrue}
+\DeclareOptionX{semibold}{\inter@semiboldtrue}
+\DeclareOptionX{sb}{\inter@semiboldtrue}
+\DeclareOptionX{light}{\inter@lighttrue}
+\DeclareOptionX{l}{\inter@lighttrue}
+\DeclareOptionX{extralight}{\inter@extralighttrue}
+\DeclareOptionX{thin}{\inter@thintrue}
+\DeclareOptionX{extrabold}{\inter@extraboldtrue}
+\DeclareOptionX{heavy}{\inter@heavytrue}
+\DeclareOptionX{default}{\inter@defaulttrue}
+\DeclareOptionX{sfdefault}{\inter@defaulttrue}
+
+
+\ProcessOptionsX
+
+\ifinter@tabular
+  \def\inter@figurealign{T}
+\else
+  \def\inter@figurealign{}
+\fi
+
+\def\bfseries@sf{b}
+\ifinter@semibold\def\bfseries@sf{sb}\fi
+\ifinter@extrabold\def\bfseries@sf{eb}\fi
+\ifinter@heavy\def\bfseries@sf{ub}\fi
+
+\def\mdseries@sf{m}
+\ifinter@medium\def\mdseries@sf{medium}\fi
+\ifinter@light\def\mdseries@sf{l}\fi
+\ifinter@extralight\def\mdseries@sf{el}\fi
+\ifinter@thin\def\mdseries@sf{ul}\fi
+
+
+\def\inter@family{Inter-\inter@figurealign LF}
+\renewcommand*\sfdefault{\inter@family}
+\ifinter@default\edef\familydefault{\sfdefault}\edef\seriesdefault{\mdseries@sf}\fi
+
+\fa@naming@exception{figures}{{superior}{proportional}}{Sup}
+\fa@naming@exception{figures}{{superior}{tabular}}{Sup}
+\def\sufigures{\@nomath\sufigures\fontfigurestyle{superior}\selectfont}
+
+\def\intertabular{\fontfamily{Inter-TLF}\selectfont}
+\def\interproportional{\fontfamily{Inter-LF}\selectfont}
+
+\def\interthin{\fontfamily{\inter@family}\fontseries{thin}\selectfont}
+\def\interlight{\fontfamily{\inter@family}\fontseries{l}\selectfont}
+\def\interextralight{\fontfamily{\inter@family}\fontseries{el}\selectfont}
+\def\intermedium{\fontfamily{\inter@family}\fontseries{medium}\selectfont}
+\def\intersemibold{\fontfamily{\inter@family}\fontseries{sb}\selectfont}
+\def\interextrabold{\fontfamily{\inter@family}\fontseries{eb}\selectfont}
+\def\interheavy{\fontfamily{\inter@family}\fontseries{ub}\selectfont}
+
+\endinput
+
+________________________________________________________________________________________
+
+and a more elaborate test file:
+
+________________________________________________________________________________________
+
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{inter}
+\usepackage{lipsum}
+\begin{document}
+
+\subsection*{Regular}
+\lipsum[1]
+
+
+\subsection*{Bold}
+
+\textbf{\lipsum[2]}
+
+
+\subsection*{Italic}
+
+\textit{\lipsum[3]}
+
+\subsection*{Bold Italic}
+
+\textbf{\textit{\lipsum[4]}}
+
+
+\subsection*{Thin}
+
+{\interthin \lipsum[5]}
+
+\subsection*{Light}
+
+{\interlight \lipsum[6]}
+
+\subsection*{Extra Light}
+
+{\interextralight \lipsum[7]}
+
+\subsection*{Medium}
+{\intermedium \lipsum[8]}
+
+\subsection*{Semi Bold}
+{\intersemibold \lipsum[9]}
+
+\subsection*{Extra Bold}
+{\interextrabold\lipsum[10]}
+
+\subsection*{Heavy}
+{\interheavy\lipsum[11]}
+
+\subsection*{Default Numbers}
+
+1234567890
+
+\subsection*{Tabular Numbers}
+{\intertabular 1234567890}
+
+\subsection*{Proportional Numbers}
+{\interproportional 1234567890}
+
+\subsection*{Superscripts}
+
+X{\sufigures 1234567890}
+
+\end{document}
+
+______________________________________________________________________________________
+
+
+Then I add xe/lua-latex support to inter.sty:
+
+______________________________________________________________________________________
+
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{inter}
+    [2020/12/13 (Bob Tennent and autoinst)  Style file for Inter fonts.]
+
+\RequirePackage{iftex,xkeyval,textcomp}
+
+\newif\ifinter@otf 
+\ifxetex
+  \inter@otftrue
+\else\ifluatex
+  \inter@otftrue
+\else  % [pdf]LaTeX
+  \inter@otffalse
+\fi\fi
+
+\newif\ifinter@tabular \inter@tabularfalse
+
+\newif\ifinter@medium  \inter@mediumfalse
+\newif\ifinter@semibold  \inter@semiboldfalse
+\newif\ifinter@extrabold  \inter@extraboldfalse
+\newif\ifinter@heavy  \inter@heavyfalse
+\newif\ifinter@light  \inter@lightfalse
+\newif\ifinter@extralight  \inter@extralightfalse
+\newif\ifinter@thin  \inter@thinfalse
+\newif\ifinter@default \inter@defaultfalse
+
+\newcommand*{\Inter@scale}{1}
+\RequirePackage{xkeyval}
+\DeclareOptionX{scaled}{\renewcommand*{\Inter@scale}{#1}}
+\DeclareOptionX{scale}{\renewcommand*{\Inter@scale}{#1}}
+\DeclareOptionX{type1}{\inter@otffalse}
+\DeclareOptionX{lining}{\inter@liningtrue}
+\DeclareOptionX{tabular}{\inter@tabulartrue}
+\DeclareOptionX{t}{\inter@tabulartrue}
+
+\DeclareOptionX{medium}{\inter@mediumtrue}
+\DeclareOptionX{mb}{\inter@mediumtrue}
+\DeclareOptionX{semibold}{\inter@semiboldtrue}
+\DeclareOptionX{sb}{\inter@semiboldtrue}
+\DeclareOptionX{light}{\inter@lighttrue}
+\DeclareOptionX{l}{\inter@lighttrue}
+\DeclareOptionX{extralight}{\inter@extralighttrue}
+\DeclareOptionX{thin}{\inter@thintrue}
+\DeclareOptionX{extrabold}{\inter@extraboldtrue}
+\DeclareOptionX{heavy}{\inter@heavytrue}
+\DeclareOptionX{default}{\inter@defaulttrue}
+\DeclareOptionX{sfdefault}{\inter@defaulttrue}
+
+
+\ProcessOptionsX
+
+\ifinter@otf
+  \ifinter@tabular
+    \def\inter@otffigurealign{Monospaced} 
+  \else
+    \def\inter@otffigurealign{Proportional} 
+  \fi
+
+\else % type1
+
+\ifinter@tabular
+  \def\inter@figurealign{T}
+\else
+  \def\inter@figurealign{}
+\fi
+
+\fi
+
+\ifinter@otf
+  \def\inter@boldstyle{Bold}
+  \ifinter@semibold\def\inter@boldstyle{SemiBold}\fi
+  \ifinter@extrabold\def\inter@boldstyle{ExtraBold}\fi
+  \ifinter@heavy\def\inter@boldstyle{Black}\fi
+
+  \def\inter@regstyle{Regular}
+  \ifinter@medium\def\inter@regstyle{Medium}\fi
+  \ifinter@light\def\inter@regstyle{Light}\fi
+  \ifinter@extralight\def\inter@regstyle{ExtraLight}\fi
+  \ifinter@thin\def\inter@regstyle{Thin}\fi
+
+\else % type1
+
+  \def\bfseries@sf{b}
+  \ifinter@semibold\def\bfseries@sf{sb}\fi
+  \ifinter@extrabold\def\bfseries@sf{eb}\fi
+  \ifinter@heavy\def\bfseries@sf{ub}\fi
+
+  \def\mdseries@sf{m}
+  \ifinter@medium\def\mdseries@sf{medium}\fi
+  \ifinter@light\def\mdseries@sf{l}\fi
+  \ifinter@extralight\def\mdseries@sf{el}\fi
+  \ifinter@thin\def\mdseries@sf{ul}\fi
+\fi
+
+
+\ifinter@otf
+  \RequirePackage{fontspec}
+\else
+  \RequirePackage{mweights,fontaxes}
+\fi
+
+\ifinter@otf
+  \def\inter@regular{Regular}
+  \ifxetex\XeTeXtracingfonts=1\fi
+  \defaultfontfeatures{
+        Ligatures = TeX ,
+        Scale     = \Inter@scale ,
+        Extension = .otf }
+  \setsansfont
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-\inter@regstyle ,
+        ItalicFont = *-\ifx\inter@regstyle\inter@regular\else\inter@regstyle\fi Italic,
+        BoldFont    = *-\inter@boldstyle ,
+        BoldItalicFont     = *-\inter@boldstyle Italic ,
+      ]
+      {Inter}
+  % grab current family in case of subsequent change:
+  \let\interfamily\sfdefault  
+  \ifinter@default\renewcommand*\familydefault{\interfamily}\fi
+
+  \providecommand\sufigures{\addfontfeatures{VerticalPosition=Superior}}
+  \newfontfamily\intertabular
+    [ Numbers = {Monospaced},
+        UprightFont    = *-\inter@regstyle ,
+        ItalicFont = *-\ifx\inter@regstyle\inter@regular\else\inter@regstyle\fi Italic,
+        BoldFont    = *-\inter@boldstyle ,
+        BoldItalicFont     = *-\inter@boldstyle Italic ,
+    ]
+    {Inter}
+  \newfontfamily\interproportional
+    [ Numbers = {Proportional},
+        UprightFont    = *-\inter@regstyle ,
+        ItalicFont = *-\ifx\inter@regstyle\inter@regular\else\inter@regstyle\fi Italic,
+        BoldFont    = *-\inter@boldstyle ,
+        BoldItalicFont     = *-\inter@boldstyle Italic ,
+    ]
+    {Inter}
+  \newfontfamily\interthin
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-Thin ,
+        ItalicFont     = *-ThinItalic ,
+        BoldFont    = *-\inter@boldstyle ,
+        BoldItalicFont     = *-\inter@boldstyle Italic ,
+      ]
+      {Inter}
+  \newfontfamily\interlight
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-Light ,
+        ItalicFont     = *-LightItalic ,
+        BoldFont    = *-\inter@boldstyle ,
+        BoldItalicFont     = *-\inter@boldstyle Italic ,
+      ]
+      {Inter}
+  \newfontfamily\interextralight
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-ExtraLight ,
+        ItalicFont     = *-ExtraLightItalic ,
+        BoldFont    = *-\inter@boldstyle ,
+        BoldItalicFont     = *-\inter@boldstyle Italic ,
+      ]
+      {Inter}
+  \newfontfamily\intermedium
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-Medium ,
+        ItalicFont     = *-MediumItalic ,
+        BoldFont    = *-\inter@boldstyle ,
+        BoldItalicFont     = *-\inter@boldstyle Italic ,
+      ]
+      {Inter}
+  \newfontfamily\intersemibold
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-SemiBold ,
+        ItalicFont     = *-SemiBoldItalic ,
+      ]
+      {Inter}
+  \newfontfamily\interextrabold
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-ExtraBold ,
+        ItalicFont     = *-ExtraBoldItalic ,
+      ]
+      {Inter}
+  \newfontfamily\interheavy
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-Black ,
+        ItalicFont     = *-BlackItalic ,
+      ]
+      {Inter}
+
+\else % type1
+
+
+  \def\inter@family{Inter-\inter@figurealign LF}
+  \renewcommand*\sfdefault{\inter@family}
+  \ifinter@default\edef\familydefault{\sfdefault}\edef\seriesdefault{\mdseries@sf}\fi
+
+  \fa@naming@exception{figures}{{superior}{proportional}}{Sup}
+  \fa@naming@exception{figures}{{superior}{tabular}}{Sup}
+  \def\sufigures{\@nomath\sufigures\fontfigurestyle{superior}\selectfont}
+
+  \def\intertabular{\fontfamily{Inter-TLF}\selectfont}
+  \def\interproportional{\fontfamily{Inter-LF}\selectfont}
+
+  \def\interthin{\fontfamily{\inter@family}\fontseries{thin}\selectfont}
+  \def\interlight{\fontfamily{\inter@family}\fontseries{l}\selectfont}
+  \def\interextralight{\fontfamily{\inter@family}\fontseries{el}\selectfont}
+  \def\intermedium{\fontfamily{\inter@family}\fontseries{medium}\selectfont}
+  \def\intersemibold{\fontfamily{\inter@family}\fontseries{sb}\selectfont}
+  \def\interextrabold{\fontfamily{\inter@family}\fontseries{eb}\selectfont}
+  \def\interheavy{\fontfamily{\inter@family}\fontseries{ub}\selectfont}
+
+\fi
+
+\ifinter@otf
+  \defaultfontfeatures{}
+\fi
+
+\endinput
+ _________________________________________________________________________________________
+
+and verify that the inter-samples.tex test file can be
+successfully processed by xelatex and lualatex.
+
+At this point, Inter.sty in texmf/tex/latex/inter can be
+replaced by inter.sty.
+
+
+Now start to create the documentation:
+
+  mkdir -p texmf/doc/fonts/inter
+  cp LICENSE.txt README.md texmf/doc/fonts/inter
+
+I do 
+  
+  dos2unix LICENSE.txt README.md 
+
+in case line terminations are Windows-like.
+
+  cp inter-samples.tex inter-samples.pdf texmf/doc/fonts/inter
+
+Then create a README file for the CTAN package:
+
+_________________________________________________________________________________________
+
+This is the README for the inter package, version 2020/12/13.
+
+This package provides LaTeX, pdfLaTeX, XeLaTeX and LuaLaTeX
+support for the Inter Sans family of fonts (version 3.015),
+designed by Rasmus Andersson. Inter is a typeface specially
+designed for user interfaces with focus on high legibility
+of small-to-medium sized text on computer screens. The
+family features a tall x-height to aid in readability of
+mixed-case and lower-case text.
+
+To install this package on a TDS-compliant TeX system
+download the file "tex-archive"/install/fonts/inter.tds.zip
+where the preferred URL for "tex-archive" is
+http://mirrors.ctan.org. Unzip the archive at the root
+of an appropriate texmf tree, likely a personal or local
+tree. If necessary, update the file-name database (e.g.,
+texhash). Update the font-map files by enabling the Map file
+Inter.map.
+
+To use, add
+
+\usepackage{inter}
+
+to the preamble of your document. These will activate Inter
+as the sans-serif text font. To activate it as the main text
+font, use
+
+\usepackage[sfdefault]{inter}
+
+LuaLaTeX and xeLaTeX users who might prefer type1 fonts or
+who wish to avoid fontspec may use the type1 option.
+
+Options scaled=<number> or scale=<number> may be used to
+scale the fonts.
+
+The default figure style is proportional-lining, but the
+tabular (or t) option will change the default to tabular
+(monospaced) figures.
+
+Font encodings supported are OT1, T1, TS1, and LY1.
+
+The semibold, extrabold and heavy options activate those
+series as the default bold series. The medium, light,
+extralight and thin options activate those series as the
+default regular series.
+
+Commands \intertabular, and \interproportional allow for
+localized use of non-default figures. Superior numbers are
+available using \sufigures. Commands \interthin, \interlight
+etc. allow for localized use of those series.
+
+The original OpenType fonts were obtained from
+
+https://github.com/rsms/inter/
+
+and are licensed under the SIL Open Font License, version
+1.1; the text may be found in the doc directory. The type1
+versions were created using cfftot1. The support files were
+created using autoinst and are licensed under the terms of
+the LaTeX Project Public License. The maintainer of this
+package is Bob Tennent at rdt(at)cs(dot)queensu(dot)ca.
+
+____________________________________________________________
+
+and copy to texmf/doc/fonts/inter
+
+Finally 
+
+  zip -r inter.tds.zip fonts tex doc
+  cp inter.tds.zip  ~/texmf
+  cd ~/texmf
+  rm -rf `find . -name inter -print 2> /dev/null`
+  unzip inter.tds.zip
+  texhash .
+  updmap-user 
+
+and verify that the test file is correctly processed.
+
+The final step is to create a CTAN-ready package but I'll
+stop here for now.
+
+
+Best,
+Bob
+
+
+
+
+
+
+
+
