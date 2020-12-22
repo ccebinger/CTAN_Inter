@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_doz5y6g3iwqptgztohvf23kote
-% Encoding created by otftotfm on Mon Dec 14 18:55:56 2020
+% Encoding created by otftotfm on Tue Dec 22 13:12:10 2020
 % Command line follows encoding
 /AutoEnc_doz5y6g3iwqptgztohvf23kote [
 %00
@@ -54,12 +54,10 @@
   /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
 ] def
 % Command line: 'otftotfm --automatic --encoding=fontools_ot1
-% --tfm-directory=texmf/fonts/tfm/public/inter
-% --vf-directory=texmf/fonts/vf/public/inter
-% --type1-directory=texmf/fonts/type1/public/inter
-% --truetype-directory=texmf/fonts/truetype/public/inter
-% --encoding-directory=texmf/fonts/enc/dvips/inter
-% --map-file=texmf/fonts/map/dvips/inter/Inter.map --no-updmap
-% --coding-scheme=TEX TEXT --feature=kern --feature=pnum --ligkern=f i =: fi
-% --ligkern=f l =: fl --ligkern=f f =: ff --ligkern=ff i =: ffi --ligkern=ff
-% l =: ffl Inter Desktop/Inter-BlackItalic.otf Inter-BlackItalic-lf-ot1'
+% --tfm-directory=texmf.0.0.2/fonts/tfm/public/inter
+% --vf-directory=texmf.0.0.2/fonts/vf/public/inter
+% --type1-directory=texmf.0.0.2/fonts/type1/public/inter
+% --encoding-directory=texmf.0.0.2/fonts/enc/dvips/inter
+% --map-file=texmf.0.0.2/fonts/map/dvips/inter/Inter.map --no-updmap --force
+% --coding-scheme=TEX TEXT --feature=kern --feature=pnum Inter
+% Desktop/Inter-BlackItalic.otf Inter-BlackItalic-lf-ot1'

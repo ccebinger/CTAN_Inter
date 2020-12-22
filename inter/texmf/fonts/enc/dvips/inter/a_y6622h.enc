@@ -1,0 +1,63 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_y6622hmj2qrlwggzh5umvmw2nd
+% Encoding created by otftotfm on Tue Dec 22 13:12:12 2020
+% Command line follows encoding
+/AutoEnc_y6622hmj2qrlwggzh5umvmw2nd [
+%00
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /uni00B8 /uni02DB /uni201A /uni007C /uni2013
+%10
+  /uni002A /.notdef /uni201E /.notdef /.notdef /.notdef /.notdef /.notdef
+  /uni2190 /uni2192 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%20
+  /uni2423 /.notdef /.notdef /.notdef /uni0024 /.notdef /.notdef /uni0027
+  /.notdef /.notdef /.notdef /.notdef /uniE093 /.notdef /uniE094 /uni2044
+%30
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /uni2212 /.notdef /.notdef
+%40
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%50
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni03A9
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni2191 /uni2193
+%60
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%70
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%80
+  /.notdef /.notdef /.notdef /.notdef /uni2020 /uni2021 /.notdef /uni2030
+  /uni2022 /uni2103 /.notdef /.notdef /uni0192 /uni20A1 /uni20A9 /.notdef
+%90
+  /.notdef /.notdef /uni20A4 /.notdef /uni203D /uni2E18 /uni20AB /uni2122
+  /uni2031 /.notdef /.notdef /uni2116 /.notdef /uni212E /uni25E6 /.notdef
+%A0
+  /.notdef /.notdef /uni00A2 /uni00A3 /uni00A4 /uni00A5 /uni00A6 /uni00A7
+  /.notdef /uni00A9 /uni00AA /.notdef /uni00AC /.notdef /uni00AE /.notdef
+%B0
+  /uni00B0 /uni00B1 /uni00B2 /uni00B3 /.notdef /uni00B5 /uni00B6 /uni00B7
+  /uni203B /uni00B9 /uni00BA /uni221A /uni00BC /uni00BD /uni00BE /uni20AC
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni00D7 /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni00F7 /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+% Command line: 'otftotfm --automatic --encoding=fontools_ts1
+% --tfm-directory=texmf.0.0.2/fonts/tfm/public/inter
+% --vf-directory=texmf.0.0.2/fonts/vf/public/inter
+% --type1-directory=texmf.0.0.2/fonts/type1/public/inter
+% --encoding-directory=texmf.0.0.2/fonts/enc/dvips/inter
+% --map-file=texmf.0.0.2/fonts/map/dvips/inter/Inter.map --no-updmap --force
+% --coding-scheme=TEX TEXT COMPANION SYMBOLS 1---TS1 --feature=tnum Inter
+% Desktop/Inter-BlackItalic.otf Inter-BlackItalic-tlf-ts1'
