@@ -8,15 +8,6 @@ of small-to-medium sized text on computer screens. The
 family features a tall x-height to aid in readability of
 mixed-case and lower-case text.
 
-To install this package on a TDS-compliant TeX system
-download the file "tex-archive"/install/fonts/inter.tds.zip
-where the preferred URL for "tex-archive" is
-http://mirrors.ctan.org. Unzip the archive at the root
-of an appropriate texmf tree, likely a personal or local
-tree. If necessary, update the file-name database (e.g.,
-texhash). Update the font-map files by enabling the Map file
-Inter.map.
-
 To use, add
 
 \usepackage{inter}
