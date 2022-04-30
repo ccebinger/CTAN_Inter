@@ -1,5 +1,0 @@
-In inter/texmf: 
-	zip -r inter.tds.zip fonts tex doc
-
-In ./:
-	zip -r inter.zip inter/README inter.tds.zip inter/doc inter/enc inter/map inter/latex inter/opentype inter/type1 inter/tfm inter/vf

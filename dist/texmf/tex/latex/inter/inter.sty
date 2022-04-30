@@ -1,0 +1,217 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{inter}
+    [2020/12/16 (Carl-Clemens Ebinger and autoinst)  Style file for Inter fonts.]
+
+\RequirePackage{ifxetex,ifluatex,xkeyval,textcomp}
+
+\newif\ifinter@otf 
+\ifxetex
+  \inter@otftrue
+\else\ifluatex
+  \inter@otftrue
+\else  % [pdf]LaTeX
+  \inter@otffalse
+\fi\fi
+
+\newif\ifinter@tabular \inter@tabularfalse
+
+\newif\ifinter@medium  \inter@mediumfalse
+\newif\ifinter@semibold  \inter@semiboldfalse
+\newif\ifinter@extrabold  \inter@extraboldfalse
+\newif\ifinter@heavy  \inter@heavyfalse
+\newif\ifinter@light  \inter@lightfalse
+\newif\ifinter@extralight  \inter@extralightfalse
+\newif\ifinter@thin  \inter@thinfalse
+\newif\ifinter@default \inter@defaultfalse
+
+\newcommand*{\Inter@scale}{1}
+\RequirePackage{xkeyval}
+\DeclareOptionX{scaled}{\renewcommand*{\Inter@scale}{#1}}
+\DeclareOptionX{scale}{\renewcommand*{\Inter@scale}{#1}}
+\DeclareOptionX{type1}{\inter@otffalse}
+\DeclareOptionX{lining}{\inter@liningtrue}
+\DeclareOptionX{tabular}{\inter@tabulartrue}
+\DeclareOptionX{t}{\inter@tabulartrue}
+
+\DeclareOptionX{medium}{\inter@mediumtrue}
+\DeclareOptionX{mb}{\inter@mediumtrue}
+\DeclareOptionX{semibold}{\inter@semiboldtrue}
+\DeclareOptionX{sb}{\inter@semiboldtrue}
+\DeclareOptionX{light}{\inter@lighttrue}
+\DeclareOptionX{l}{\inter@lighttrue}
+\DeclareOptionX{extralight}{\inter@extralighttrue}
+\DeclareOptionX{thin}{\inter@thintrue}
+\DeclareOptionX{extrabold}{\inter@extraboldtrue}
+\DeclareOptionX{heavy}{\inter@heavytrue}
+\DeclareOptionX{default}{\inter@defaulttrue}
+\DeclareOptionX{sfdefault}{\inter@defaulttrue}
+
+
+\ProcessOptionsX
+
+\ifinter@otf
+  \ifinter@tabular
+    \def\inter@otffigurealign{Monospaced} 
+  \else
+    \def\inter@otffigurealign{Proportional} 
+  \fi
+
+\else % type1
+
+\ifinter@tabular
+  \def\inter@figurealign{T}
+\else
+  \def\inter@figurealign{}
+\fi
+
+\fi
+
+\ifinter@otf
+  \def\inter@boldstyle{Bold}
+  \ifinter@semibold\def\inter@boldstyle{SemiBold}\fi
+  \ifinter@extrabold\def\inter@boldstyle{ExtraBold}\fi
+  \ifinter@heavy\def\inter@boldstyle{Black}\fi
+
+  \def\inter@regstyle{Regular}
+  \ifinter@medium\def\inter@regstyle{Medium}\fi
+  \ifinter@light\def\inter@regstyle{Light}\fi
+  \ifinter@extralight\def\inter@regstyle{ExtraLight}\fi
+  \ifinter@thin\def\inter@regstyle{Thin}\fi
+
+\else % type1
+
+  \def\bfseries@sf{b}
+  \ifinter@semibold\def\bfseries@sf{sb}\fi
+  \ifinter@extrabold\def\bfseries@sf{eb}\fi
+  \ifinter@heavy\def\bfseries@sf{ub}\fi
+
+  \def\mdseries@sf{m}
+  \ifinter@medium\def\mdseries@sf{medium}\fi
+  \ifinter@light\def\mdseries@sf{l}\fi
+  \ifinter@extralight\def\mdseries@sf{el}\fi
+  \ifinter@thin\def\mdseries@sf{ul}\fi
+\fi
+
+
+\ifinter@otf
+  \RequirePackage{fontspec}
+\else
+  \RequirePackage{mweights,fontaxes}
+\fi
+
+\ifinter@otf
+  \def\inter@regular{Regular}
+  \ifxetex\XeTeXtracingfonts=1\fi
+  \defaultfontfeatures{
+        Ligatures = TeX ,
+        Scale     = \Inter@scale ,
+        Extension = .otf }
+  \setsansfont
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-\inter@regstyle ,
+        ItalicFont = *-\ifx\inter@regstyle\inter@regular\else\inter@regstyle\fi Italic,
+        BoldFont    = *-\inter@boldstyle ,
+        BoldItalicFont     = *-\inter@boldstyle Italic ,
+      ]
+      {Inter}
+  % grab current family in case of subsequent change:
+  \let\interfamily\sfdefault  
+  \ifinter@default\renewcommand*\familydefault{\interfamily}\fi
+
+  \providecommand\sufigures{\addfontfeatures{VerticalPosition=Superior}}
+  \newfontfamily\intertabular
+    [ Numbers = {Monospaced},
+        UprightFont    = *-\inter@regstyle ,
+        ItalicFont = *-\ifx\inter@regstyle\inter@regular\else\inter@regstyle\fi Italic,
+        BoldFont    = *-\inter@boldstyle ,
+        BoldItalicFont     = *-\inter@boldstyle Italic ,
+    ]
+    {Inter}
+  \newfontfamily\interproportional
+    [ Numbers = {Proportional},
+        UprightFont    = *-\inter@regstyle ,
+        ItalicFont = *-\ifx\inter@regstyle\inter@regular\else\inter@regstyle\fi Italic,
+        BoldFont    = *-\inter@boldstyle ,
+        BoldItalicFont     = *-\inter@boldstyle Italic ,
+    ]
+    {Inter}
+  \newfontfamily\interthin
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-Thin ,
+        ItalicFont     = *-ThinItalic ,
+        BoldFont    = *-\inter@boldstyle ,
+        BoldItalicFont     = *-\inter@boldstyle Italic ,
+      ]
+      {Inter}
+  \newfontfamily\interlight
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-Light ,
+        ItalicFont     = *-LightItalic ,
+        BoldFont    = *-\inter@boldstyle ,
+        BoldItalicFont     = *-\inter@boldstyle Italic ,
+      ]
+      {Inter}
+  \newfontfamily\interextralight
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-ExtraLight ,
+        ItalicFont     = *-ExtraLightItalic ,
+        BoldFont    = *-\inter@boldstyle ,
+        BoldItalicFont     = *-\inter@boldstyle Italic ,
+      ]
+      {Inter}
+  \newfontfamily\intermedium
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-Medium ,
+        ItalicFont     = *-MediumItalic ,
+        BoldFont    = *-\inter@boldstyle ,
+        BoldItalicFont     = *-\inter@boldstyle Italic ,
+      ]
+      {Inter}
+  \newfontfamily\intersemibold
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-SemiBold ,
+        ItalicFont     = *-SemiBoldItalic ,
+      ]
+      {Inter}
+  \newfontfamily\interextrabold
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-ExtraBold ,
+        ItalicFont     = *-ExtraBoldItalic ,
+      ]
+      {Inter}
+  \newfontfamily\interheavy
+      [ Numbers = {\inter@otffigurealign},
+        UprightFont    = *-Black ,
+        ItalicFont     = *-BlackItalic ,
+      ]
+      {Inter}
+
+\else % type1
+
+
+  \def\inter@family{Inter-\inter@figurealign LF}
+  \renewcommand*\sfdefault{\inter@family}
+  \ifinter@default\edef\familydefault{\sfdefault}\edef\seriesdefault{\mdseries@sf}\fi
+
+  \fa@naming@exception{figures}{{superior}{proportional}}{Sup}
+  \fa@naming@exception{figures}{{superior}{tabular}}{Sup}
+  \def\sufigures{\@nomath\sufigures\fontfigurestyle{superior}\selectfont}
+
+  \def\intertabular{\fontfamily{Inter-TLF}\selectfont}
+  \def\interproportional{\fontfamily{Inter-LF}\selectfont}
+
+  \def\interthin{\fontfamily{\inter@family}\fontseries{thin}\selectfont}
+  \def\interlight{\fontfamily{\inter@family}\fontseries{l}\selectfont}
+  \def\interextralight{\fontfamily{\inter@family}\fontseries{el}\selectfont}
+  \def\intermedium{\fontfamily{\inter@family}\fontseries{medium}\selectfont}
+  \def\intersemibold{\fontfamily{\inter@family}\fontseries{sb}\selectfont}
+  \def\interextrabold{\fontfamily{\inter@family}\fontseries{eb}\selectfont}
+  \def\interheavy{\fontfamily{\inter@family}\fontseries{ub}\selectfont}
+
+\fi
+
+\ifinter@otf
+  \defaultfontfeatures{}
+\fi
+
+\endinput
