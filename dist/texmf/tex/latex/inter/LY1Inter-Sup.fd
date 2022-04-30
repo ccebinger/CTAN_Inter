@@ -20,42 +20,34 @@
 \DeclareFontFamily{LY1}{Inter-Sup}{}
 
 
-%   ----  ul = thin  ----
+%   ----  m = regular  ----
 
-\DeclareFontShape{LY1}{Inter-Sup}{ul}{it}{
-      <-> \Inter@@scale Inter-ThinItalic-sup-ly1
+\DeclareFontShape{LY1}{Inter-Sup}{m}{it}{
+      <-> \Inter@@scale Inter-Italic-sup-ly1
 }{}
 
-\DeclareFontShape{LY1}{Inter-Sup}{thin}{it}{
-      <-> alias * Inter-Sup/ul/it
+\DeclareFontShape{LY1}{Inter-Sup}{regular}{it}{
+      <-> alias * Inter-Sup/m/it
 }{}
 
-\DeclareFontShape{LY1}{Inter-Sup}{ul}{n}{
-      <-> \Inter@@scale Inter-Thin-sup-ly1
+\DeclareFontShape{LY1}{Inter-Sup}{m}{n}{
+      <-> \Inter@@scale Inter-Regular-sup-ly1
 }{}
 
-\DeclareFontShape{LY1}{Inter-Sup}{thin}{n}{
-      <-> alias * Inter-Sup/ul/n
+\DeclareFontShape{LY1}{Inter-Sup}{regular}{n}{
+      <-> alias * Inter-Sup/m/n
 }{}
 
-\DeclareFontShape{LY1}{Inter-Sup}{ul}{sl}{
-    <-> ssub * Inter-Sup/ul/it
+\DeclareFontShape{LY1}{Inter-Sup}{m}{sl}{
+    <-> ssub * Inter-Sup/m/it
 }{}
 
-\DeclareFontShape{LY1}{Inter-Sup}{thin}{sl}{
-    <-> ssub * Inter-Sup/thin/it
+\DeclareFontShape{LY1}{Inter-Sup}{regular}{sl}{
+    <-> ssub * Inter-Sup/regular/it
 }{}
 
 
 %   ----  b = bold  ----
-
-\DeclareFontShape{LY1}{Inter-Sup}{b}{it}{
-      <-> \Inter@@scale Inter-BoldItalic-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{Inter-Sup}{bold}{it}{
-      <-> alias * Inter-Sup/b/it
-}{}
 
 \DeclareFontShape{LY1}{Inter-Sup}{b}{n}{
       <-> \Inter@@scale Inter-Bold-sup-ly1
@@ -65,12 +57,47 @@
       <-> alias * Inter-Sup/b/n
 }{}
 
+\DeclareFontShape{LY1}{Inter-Sup}{b}{it}{
+      <-> \Inter@@scale Inter-BoldItalic-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{Inter-Sup}{bold}{it}{
+      <-> alias * Inter-Sup/b/it
+}{}
+
 \DeclareFontShape{LY1}{Inter-Sup}{b}{sl}{
     <-> ssub * Inter-Sup/b/it
 }{}
 
 \DeclareFontShape{LY1}{Inter-Sup}{bold}{sl}{
     <-> ssub * Inter-Sup/bold/it
+}{}
+
+
+%   ----  l = light  ----
+
+\DeclareFontShape{LY1}{Inter-Sup}{l}{n}{
+      <-> \Inter@@scale Inter-Light-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{Inter-Sup}{light}{n}{
+      <-> alias * Inter-Sup/l/n
+}{}
+
+\DeclareFontShape{LY1}{Inter-Sup}{l}{it}{
+      <-> \Inter@@scale Inter-LightItalic-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{Inter-Sup}{light}{it}{
+      <-> alias * Inter-Sup/l/it
+}{}
+
+\DeclareFontShape{LY1}{Inter-Sup}{l}{sl}{
+    <-> ssub * Inter-Sup/l/it
+}{}
+
+\DeclareFontShape{LY1}{Inter-Sup}{light}{sl}{
+    <-> ssub * Inter-Sup/light/it
 }{}
 
 
@@ -101,42 +128,7 @@
 }{}
 
 
-%   ----  m = regular  ----
-
-\DeclareFontShape{LY1}{Inter-Sup}{m}{it}{
-      <-> \Inter@@scale Inter-Italic-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{Inter-Sup}{regular}{it}{
-      <-> alias * Inter-Sup/m/it
-}{}
-
-\DeclareFontShape{LY1}{Inter-Sup}{m}{n}{
-      <-> \Inter@@scale Inter-Regular-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{Inter-Sup}{regular}{n}{
-      <-> alias * Inter-Sup/m/n
-}{}
-
-\DeclareFontShape{LY1}{Inter-Sup}{m}{sl}{
-    <-> ssub * Inter-Sup/m/it
-}{}
-
-\DeclareFontShape{LY1}{Inter-Sup}{regular}{sl}{
-    <-> ssub * Inter-Sup/regular/it
-}{}
-
-
 %   ----  ub = black  ----
-
-\DeclareFontShape{LY1}{Inter-Sup}{ub}{n}{
-      <-> \Inter@@scale Inter-Black-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{Inter-Sup}{black}{n}{
-      <-> alias * Inter-Sup/ub/n
-}{}
 
 \DeclareFontShape{LY1}{Inter-Sup}{ub}{it}{
       <-> \Inter@@scale Inter-BlackItalic-sup-ly1
@@ -144,6 +136,14 @@
 
 \DeclareFontShape{LY1}{Inter-Sup}{black}{it}{
       <-> alias * Inter-Sup/ub/it
+}{}
+
+\DeclareFontShape{LY1}{Inter-Sup}{ub}{n}{
+      <-> \Inter@@scale Inter-Black-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{Inter-Sup}{black}{n}{
+      <-> alias * Inter-Sup/ub/n
 }{}
 
 \DeclareFontShape{LY1}{Inter-Sup}{ub}{sl}{
@@ -157,20 +157,20 @@
 
 %   ----  el = extralight  ----
 
-\DeclareFontShape{LY1}{Inter-Sup}{el}{it}{
-      <-> \Inter@@scale Inter-ExtraLightItalic-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{Inter-Sup}{extralight}{it}{
-      <-> alias * Inter-Sup/el/it
-}{}
-
 \DeclareFontShape{LY1}{Inter-Sup}{el}{n}{
       <-> \Inter@@scale Inter-ExtraLight-sup-ly1
 }{}
 
 \DeclareFontShape{LY1}{Inter-Sup}{extralight}{n}{
       <-> alias * Inter-Sup/el/n
+}{}
+
+\DeclareFontShape{LY1}{Inter-Sup}{el}{it}{
+      <-> \Inter@@scale Inter-ExtraLightItalic-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{Inter-Sup}{extralight}{it}{
+      <-> alias * Inter-Sup/el/it
 }{}
 
 \DeclareFontShape{LY1}{Inter-Sup}{el}{sl}{
@@ -184,20 +184,20 @@
 
 %   ----  eb = extrabold  ----
 
-\DeclareFontShape{LY1}{Inter-Sup}{eb}{it}{
-      <-> \Inter@@scale Inter-ExtraBoldItalic-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{Inter-Sup}{extrabold}{it}{
-      <-> alias * Inter-Sup/eb/it
-}{}
-
 \DeclareFontShape{LY1}{Inter-Sup}{eb}{n}{
       <-> \Inter@@scale Inter-ExtraBold-sup-ly1
 }{}
 
 \DeclareFontShape{LY1}{Inter-Sup}{extrabold}{n}{
       <-> alias * Inter-Sup/eb/n
+}{}
+
+\DeclareFontShape{LY1}{Inter-Sup}{eb}{it}{
+      <-> \Inter@@scale Inter-ExtraBoldItalic-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{Inter-Sup}{extrabold}{it}{
+      <-> alias * Inter-Sup/eb/it
 }{}
 
 \DeclareFontShape{LY1}{Inter-Sup}{eb}{sl}{
@@ -209,41 +209,41 @@
 }{}
 
 
-%   ----  l = light  ----
+%   ----  ul = thin  ----
 
-\DeclareFontShape{LY1}{Inter-Sup}{l}{it}{
-      <-> \Inter@@scale Inter-LightItalic-sup-ly1
+\DeclareFontShape{LY1}{Inter-Sup}{ul}{n}{
+      <-> \Inter@@scale Inter-Thin-sup-ly1
 }{}
 
-\DeclareFontShape{LY1}{Inter-Sup}{light}{it}{
-      <-> alias * Inter-Sup/l/it
+\DeclareFontShape{LY1}{Inter-Sup}{thin}{n}{
+      <-> alias * Inter-Sup/ul/n
 }{}
 
-\DeclareFontShape{LY1}{Inter-Sup}{l}{n}{
-      <-> \Inter@@scale Inter-Light-sup-ly1
+\DeclareFontShape{LY1}{Inter-Sup}{ul}{it}{
+      <-> \Inter@@scale Inter-ThinItalic-sup-ly1
 }{}
 
-\DeclareFontShape{LY1}{Inter-Sup}{light}{n}{
-      <-> alias * Inter-Sup/l/n
+\DeclareFontShape{LY1}{Inter-Sup}{thin}{it}{
+      <-> alias * Inter-Sup/ul/it
 }{}
 
-\DeclareFontShape{LY1}{Inter-Sup}{l}{sl}{
-    <-> ssub * Inter-Sup/l/it
+\DeclareFontShape{LY1}{Inter-Sup}{ul}{sl}{
+    <-> ssub * Inter-Sup/ul/it
 }{}
 
-\DeclareFontShape{LY1}{Inter-Sup}{light}{sl}{
-    <-> ssub * Inter-Sup/light/it
+\DeclareFontShape{LY1}{Inter-Sup}{thin}{sl}{
+    <-> ssub * Inter-Sup/thin/it
 }{}
 
 
 %   ----  medium  ----
 
-\DeclareFontShape{LY1}{Inter-Sup}{medium}{it}{
-      <-> \Inter@@scale Inter-MediumItalic-sup-ly1
-}{}
-
 \DeclareFontShape{LY1}{Inter-Sup}{medium}{n}{
       <-> \Inter@@scale Inter-Medium-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{Inter-Sup}{medium}{it}{
+      <-> \Inter@@scale Inter-MediumItalic-sup-ly1
 }{}
 
 \DeclareFontShape{LY1}{Inter-Sup}{medium}{sl}{
@@ -257,12 +257,12 @@
       <-> ssub * Inter-Sup/b/sl
 }{}
 
-\DeclareFontShape{LY1}{Inter-Sup}{bx}{n}{
-      <-> ssub * Inter-Sup/b/n
-}{}
-
 \DeclareFontShape{LY1}{Inter-Sup}{bx}{it}{
       <-> ssub * Inter-Sup/b/it
+}{}
+
+\DeclareFontShape{LY1}{Inter-Sup}{bx}{n}{
+      <-> ssub * Inter-Sup/b/n
 }{}
 
 \endinput

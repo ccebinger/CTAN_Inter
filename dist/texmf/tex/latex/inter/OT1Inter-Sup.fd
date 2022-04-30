@@ -20,15 +20,61 @@
 \DeclareFontFamily{OT1}{Inter-Sup}{}
 
 
+%   ----  l = light  ----
+
+\DeclareFontShape{OT1}{Inter-Sup}{l}{it}{
+      <-> \Inter@@scale Inter-LightItalic-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{light}{it}{
+      <-> alias * Inter-Sup/l/it
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{l}{n}{
+      <-> \Inter@@scale Inter-Light-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{light}{n}{
+      <-> alias * Inter-Sup/l/n
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{l}{sl}{
+    <-> ssub * Inter-Sup/l/it
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{light}{sl}{
+    <-> ssub * Inter-Sup/light/it
+}{}
+
+
+%   ----  m = regular  ----
+
+\DeclareFontShape{OT1}{Inter-Sup}{m}{n}{
+      <-> \Inter@@scale Inter-Regular-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{regular}{n}{
+      <-> alias * Inter-Sup/m/n
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{m}{it}{
+      <-> \Inter@@scale Inter-Italic-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{regular}{it}{
+      <-> alias * Inter-Sup/m/it
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{m}{sl}{
+    <-> ssub * Inter-Sup/m/it
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{regular}{sl}{
+    <-> ssub * Inter-Sup/regular/it
+}{}
+
+
 %   ----  b = bold  ----
-
-\DeclareFontShape{OT1}{Inter-Sup}{b}{n}{
-      <-> \Inter@@scale Inter-Bold-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{bold}{n}{
-      <-> alias * Inter-Sup/b/n
-}{}
 
 \DeclareFontShape{OT1}{Inter-Sup}{b}{it}{
       <-> \Inter@@scale Inter-BoldItalic-sup-ot1
@@ -38,39 +84,20 @@
       <-> alias * Inter-Sup/b/it
 }{}
 
+\DeclareFontShape{OT1}{Inter-Sup}{b}{n}{
+      <-> \Inter@@scale Inter-Bold-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{bold}{n}{
+      <-> alias * Inter-Sup/b/n
+}{}
+
 \DeclareFontShape{OT1}{Inter-Sup}{b}{sl}{
     <-> ssub * Inter-Sup/b/it
 }{}
 
 \DeclareFontShape{OT1}{Inter-Sup}{bold}{sl}{
     <-> ssub * Inter-Sup/bold/it
-}{}
-
-
-%   ----  ul = thin  ----
-
-\DeclareFontShape{OT1}{Inter-Sup}{ul}{n}{
-      <-> \Inter@@scale Inter-Thin-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{thin}{n}{
-      <-> alias * Inter-Sup/ul/n
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{ul}{it}{
-      <-> \Inter@@scale Inter-ThinItalic-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{thin}{it}{
-      <-> alias * Inter-Sup/ul/it
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{ul}{sl}{
-    <-> ssub * Inter-Sup/ul/it
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{thin}{sl}{
-    <-> ssub * Inter-Sup/thin/it
 }{}
 
 
@@ -128,30 +155,72 @@
 }{}
 
 
-%   ----  m = regular  ----
+%   ----  el = extralight  ----
 
-\DeclareFontShape{OT1}{Inter-Sup}{m}{n}{
-      <-> \Inter@@scale Inter-Regular-sup-ot1
+\DeclareFontShape{OT1}{Inter-Sup}{el}{n}{
+      <-> \Inter@@scale Inter-ExtraLight-sup-ot1
 }{}
 
-\DeclareFontShape{OT1}{Inter-Sup}{regular}{n}{
-      <-> alias * Inter-Sup/m/n
+\DeclareFontShape{OT1}{Inter-Sup}{extralight}{n}{
+      <-> alias * Inter-Sup/el/n
 }{}
 
-\DeclareFontShape{OT1}{Inter-Sup}{m}{it}{
-      <-> \Inter@@scale Inter-Italic-sup-ot1
+\DeclareFontShape{OT1}{Inter-Sup}{el}{it}{
+      <-> \Inter@@scale Inter-ExtraLightItalic-sup-ot1
 }{}
 
-\DeclareFontShape{OT1}{Inter-Sup}{regular}{it}{
-      <-> alias * Inter-Sup/m/it
+\DeclareFontShape{OT1}{Inter-Sup}{extralight}{it}{
+      <-> alias * Inter-Sup/el/it
 }{}
 
-\DeclareFontShape{OT1}{Inter-Sup}{m}{sl}{
-    <-> ssub * Inter-Sup/m/it
+\DeclareFontShape{OT1}{Inter-Sup}{el}{sl}{
+    <-> ssub * Inter-Sup/el/it
 }{}
 
-\DeclareFontShape{OT1}{Inter-Sup}{regular}{sl}{
-    <-> ssub * Inter-Sup/regular/it
+\DeclareFontShape{OT1}{Inter-Sup}{extralight}{sl}{
+    <-> ssub * Inter-Sup/extralight/it
+}{}
+
+
+%   ----  medium  ----
+
+\DeclareFontShape{OT1}{Inter-Sup}{medium}{it}{
+      <-> \Inter@@scale Inter-MediumItalic-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{medium}{n}{
+      <-> \Inter@@scale Inter-Medium-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{medium}{sl}{
+    <-> ssub * Inter-Sup/medium/it
+}{}
+
+
+%   ----  ul = thin  ----
+
+\DeclareFontShape{OT1}{Inter-Sup}{ul}{it}{
+      <-> \Inter@@scale Inter-ThinItalic-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{thin}{it}{
+      <-> alias * Inter-Sup/ul/it
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{ul}{n}{
+      <-> \Inter@@scale Inter-Thin-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{thin}{n}{
+      <-> alias * Inter-Sup/ul/n
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{ul}{sl}{
+    <-> ssub * Inter-Sup/ul/it
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{thin}{sl}{
+    <-> ssub * Inter-Sup/thin/it
 }{}
 
 
@@ -182,80 +251,7 @@
 }{}
 
 
-%   ----  el = extralight  ----
-
-\DeclareFontShape{OT1}{Inter-Sup}{el}{n}{
-      <-> \Inter@@scale Inter-ExtraLight-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{extralight}{n}{
-      <-> alias * Inter-Sup/el/n
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{el}{it}{
-      <-> \Inter@@scale Inter-ExtraLightItalic-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{extralight}{it}{
-      <-> alias * Inter-Sup/el/it
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{el}{sl}{
-    <-> ssub * Inter-Sup/el/it
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{extralight}{sl}{
-    <-> ssub * Inter-Sup/extralight/it
-}{}
-
-
-%   ----  l = light  ----
-
-\DeclareFontShape{OT1}{Inter-Sup}{l}{n}{
-      <-> \Inter@@scale Inter-Light-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{light}{n}{
-      <-> alias * Inter-Sup/l/n
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{l}{it}{
-      <-> \Inter@@scale Inter-LightItalic-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{light}{it}{
-      <-> alias * Inter-Sup/l/it
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{l}{sl}{
-    <-> ssub * Inter-Sup/l/it
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{light}{sl}{
-    <-> ssub * Inter-Sup/light/it
-}{}
-
-
-%   ----  medium  ----
-
-\DeclareFontShape{OT1}{Inter-Sup}{medium}{n}{
-      <-> \Inter@@scale Inter-Medium-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{medium}{it}{
-      <-> \Inter@@scale Inter-MediumItalic-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{Inter-Sup}{medium}{sl}{
-    <-> ssub * Inter-Sup/medium/it
-}{}
-
-
 %   ----  Extra 'ssub' rules to map 'bx' to 'b'  ----
-
-\DeclareFontShape{OT1}{Inter-Sup}{bx}{n}{
-      <-> ssub * Inter-Sup/b/n
-}{}
 
 \DeclareFontShape{OT1}{Inter-Sup}{bx}{sl}{
       <-> ssub * Inter-Sup/b/sl
@@ -263,6 +259,10 @@
 
 \DeclareFontShape{OT1}{Inter-Sup}{bx}{it}{
       <-> ssub * Inter-Sup/b/it
+}{}
+
+\DeclareFontShape{OT1}{Inter-Sup}{bx}{n}{
+      <-> ssub * Inter-Sup/b/n
 }{}
 
 \endinput

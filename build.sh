@@ -42,6 +42,7 @@ TEXMF="$DIST_DIR/texmf"
 autoinst \
   -logfile="$WORK_DIR/autoinst.log" \
   -vendor=public -typeface=inter \
+  -sanserif \
   -target="$TEXMF" "$WORK_DIR"/*.otf
 
 # Adapt directory structure for CTAN package
@@ -51,6 +52,10 @@ ln -s -r "$TEXMF/fonts/map/dvips/inter"/* "$DIST_DIR/map"
 ln -s -r "$TEXMF/fonts/tfm/public/inter"/* "$DIST_DIR/tfm"
 ln -s -r "$TEXMF/fonts/type1/public/inter"/* "$DIST_DIR/type1"
 ln -s -r "$TEXMF/fonts/vf/public/inter"/* "$DIST_DIR/vf"
+
+# Replace autoinst style file by our own
+rm "$TEXMF/tex/latex/inter/Inter.sty"
+cp "$SRC_DIR/inter.sty" "$TEXMF/tex/latex/inter"
 ln -s -r "$TEXMF/tex/latex/inter"/* "$DIST_DIR/latex"
 
 OTF_DEST="$TEXMF/fonts/opentype/public/inter/"

@@ -20,6 +20,33 @@
 \DeclareFontFamily{LY1}{Inter-TLF}{}
 
 
+%   ----  ub = black  ----
+
+\DeclareFontShape{LY1}{Inter-TLF}{ub}{it}{
+      <-> \Inter@@scale Inter-BlackItalic-tlf-ly1
+}{}
+
+\DeclareFontShape{LY1}{Inter-TLF}{black}{it}{
+      <-> alias * Inter-TLF/ub/it
+}{}
+
+\DeclareFontShape{LY1}{Inter-TLF}{ub}{n}{
+      <-> \Inter@@scale Inter-Black-tlf-ly1
+}{}
+
+\DeclareFontShape{LY1}{Inter-TLF}{black}{n}{
+      <-> alias * Inter-TLF/ub/n
+}{}
+
+\DeclareFontShape{LY1}{Inter-TLF}{ub}{sl}{
+    <-> ssub * Inter-TLF/ub/it
+}{}
+
+\DeclareFontShape{LY1}{Inter-TLF}{black}{sl}{
+    <-> ssub * Inter-TLF/black/it
+}{}
+
+
 %   ----  medium  ----
 
 \DeclareFontShape{LY1}{Inter-TLF}{medium}{n}{
@@ -32,60 +59,6 @@
 
 \DeclareFontShape{LY1}{Inter-TLF}{medium}{sl}{
     <-> ssub * Inter-TLF/medium/it
-}{}
-
-
-%   ----  l = light  ----
-
-\DeclareFontShape{LY1}{Inter-TLF}{l}{it}{
-      <-> \Inter@@scale Inter-LightItalic-tlf-ly1
-}{}
-
-\DeclareFontShape{LY1}{Inter-TLF}{light}{it}{
-      <-> alias * Inter-TLF/l/it
-}{}
-
-\DeclareFontShape{LY1}{Inter-TLF}{l}{n}{
-      <-> \Inter@@scale Inter-Light-tlf-ly1
-}{}
-
-\DeclareFontShape{LY1}{Inter-TLF}{light}{n}{
-      <-> alias * Inter-TLF/l/n
-}{}
-
-\DeclareFontShape{LY1}{Inter-TLF}{l}{sl}{
-    <-> ssub * Inter-TLF/l/it
-}{}
-
-\DeclareFontShape{LY1}{Inter-TLF}{light}{sl}{
-    <-> ssub * Inter-TLF/light/it
-}{}
-
-
-%   ----  sb = semibold  ----
-
-\DeclareFontShape{LY1}{Inter-TLF}{sb}{it}{
-      <-> \Inter@@scale Inter-SemiBoldItalic-tlf-ly1
-}{}
-
-\DeclareFontShape{LY1}{Inter-TLF}{semibold}{it}{
-      <-> alias * Inter-TLF/sb/it
-}{}
-
-\DeclareFontShape{LY1}{Inter-TLF}{sb}{n}{
-      <-> \Inter@@scale Inter-SemiBold-tlf-ly1
-}{}
-
-\DeclareFontShape{LY1}{Inter-TLF}{semibold}{n}{
-      <-> alias * Inter-TLF/sb/n
-}{}
-
-\DeclareFontShape{LY1}{Inter-TLF}{sb}{sl}{
-    <-> ssub * Inter-TLF/sb/it
-}{}
-
-\DeclareFontShape{LY1}{Inter-TLF}{semibold}{sl}{
-    <-> ssub * Inter-TLF/semibold/it
 }{}
 
 
@@ -116,30 +89,30 @@
 }{}
 
 
-%   ----  b = bold  ----
+%   ----  eb = extrabold  ----
 
-\DeclareFontShape{LY1}{Inter-TLF}{b}{n}{
-      <-> \Inter@@scale Inter-Bold-tlf-ly1
+\DeclareFontShape{LY1}{Inter-TLF}{eb}{n}{
+      <-> \Inter@@scale Inter-ExtraBold-tlf-ly1
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{bold}{n}{
-      <-> alias * Inter-TLF/b/n
+\DeclareFontShape{LY1}{Inter-TLF}{extrabold}{n}{
+      <-> alias * Inter-TLF/eb/n
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{b}{it}{
-      <-> \Inter@@scale Inter-BoldItalic-tlf-ly1
+\DeclareFontShape{LY1}{Inter-TLF}{eb}{it}{
+      <-> \Inter@@scale Inter-ExtraBoldItalic-tlf-ly1
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{bold}{it}{
-      <-> alias * Inter-TLF/b/it
+\DeclareFontShape{LY1}{Inter-TLF}{extrabold}{it}{
+      <-> alias * Inter-TLF/eb/it
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{b}{sl}{
-    <-> ssub * Inter-TLF/b/it
+\DeclareFontShape{LY1}{Inter-TLF}{eb}{sl}{
+    <-> ssub * Inter-TLF/eb/it
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{bold}{sl}{
-    <-> ssub * Inter-TLF/bold/it
+\DeclareFontShape{LY1}{Inter-TLF}{extrabold}{sl}{
+    <-> ssub * Inter-TLF/extrabold/it
 }{}
 
 
@@ -170,42 +143,34 @@
 }{}
 
 
-%   ----  eb = extrabold  ----
+%   ----  l = light  ----
 
-\DeclareFontShape{LY1}{Inter-TLF}{eb}{it}{
-      <-> \Inter@@scale Inter-ExtraBoldItalic-tlf-ly1
+\DeclareFontShape{LY1}{Inter-TLF}{l}{it}{
+      <-> \Inter@@scale Inter-LightItalic-tlf-ly1
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{extrabold}{it}{
-      <-> alias * Inter-TLF/eb/it
+\DeclareFontShape{LY1}{Inter-TLF}{light}{it}{
+      <-> alias * Inter-TLF/l/it
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{eb}{n}{
-      <-> \Inter@@scale Inter-ExtraBold-tlf-ly1
+\DeclareFontShape{LY1}{Inter-TLF}{l}{n}{
+      <-> \Inter@@scale Inter-Light-tlf-ly1
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{extrabold}{n}{
-      <-> alias * Inter-TLF/eb/n
+\DeclareFontShape{LY1}{Inter-TLF}{light}{n}{
+      <-> alias * Inter-TLF/l/n
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{eb}{sl}{
-    <-> ssub * Inter-TLF/eb/it
+\DeclareFontShape{LY1}{Inter-TLF}{l}{sl}{
+    <-> ssub * Inter-TLF/l/it
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{extrabold}{sl}{
-    <-> ssub * Inter-TLF/extrabold/it
+\DeclareFontShape{LY1}{Inter-TLF}{light}{sl}{
+    <-> ssub * Inter-TLF/light/it
 }{}
 
 
 %   ----  m = regular  ----
-
-\DeclareFontShape{LY1}{Inter-TLF}{m}{it}{
-      <-> \Inter@@scale Inter-Italic-tlf-ly1
-}{}
-
-\DeclareFontShape{LY1}{Inter-TLF}{regular}{it}{
-      <-> alias * Inter-TLF/m/it
-}{}
 
 \DeclareFontShape{LY1}{Inter-TLF}{m}{n}{
       <-> \Inter@@scale Inter-Regular-tlf-ly1
@@ -213,6 +178,14 @@
 
 \DeclareFontShape{LY1}{Inter-TLF}{regular}{n}{
       <-> alias * Inter-TLF/m/n
+}{}
+
+\DeclareFontShape{LY1}{Inter-TLF}{m}{it}{
+      <-> \Inter@@scale Inter-Italic-tlf-ly1
+}{}
+
+\DeclareFontShape{LY1}{Inter-TLF}{regular}{it}{
+      <-> alias * Inter-TLF/m/it
 }{}
 
 \DeclareFontShape{LY1}{Inter-TLF}{m}{sl}{
@@ -224,30 +197,57 @@
 }{}
 
 
-%   ----  ub = black  ----
+%   ----  b = bold  ----
 
-\DeclareFontShape{LY1}{Inter-TLF}{ub}{n}{
-      <-> \Inter@@scale Inter-Black-tlf-ly1
+\DeclareFontShape{LY1}{Inter-TLF}{b}{it}{
+      <-> \Inter@@scale Inter-BoldItalic-tlf-ly1
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{black}{n}{
-      <-> alias * Inter-TLF/ub/n
+\DeclareFontShape{LY1}{Inter-TLF}{bold}{it}{
+      <-> alias * Inter-TLF/b/it
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{ub}{it}{
-      <-> \Inter@@scale Inter-BlackItalic-tlf-ly1
+\DeclareFontShape{LY1}{Inter-TLF}{b}{n}{
+      <-> \Inter@@scale Inter-Bold-tlf-ly1
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{black}{it}{
-      <-> alias * Inter-TLF/ub/it
+\DeclareFontShape{LY1}{Inter-TLF}{bold}{n}{
+      <-> alias * Inter-TLF/b/n
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{ub}{sl}{
-    <-> ssub * Inter-TLF/ub/it
+\DeclareFontShape{LY1}{Inter-TLF}{b}{sl}{
+    <-> ssub * Inter-TLF/b/it
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{black}{sl}{
-    <-> ssub * Inter-TLF/black/it
+\DeclareFontShape{LY1}{Inter-TLF}{bold}{sl}{
+    <-> ssub * Inter-TLF/bold/it
+}{}
+
+
+%   ----  sb = semibold  ----
+
+\DeclareFontShape{LY1}{Inter-TLF}{sb}{it}{
+      <-> \Inter@@scale Inter-SemiBoldItalic-tlf-ly1
+}{}
+
+\DeclareFontShape{LY1}{Inter-TLF}{semibold}{it}{
+      <-> alias * Inter-TLF/sb/it
+}{}
+
+\DeclareFontShape{LY1}{Inter-TLF}{sb}{n}{
+      <-> \Inter@@scale Inter-SemiBold-tlf-ly1
+}{}
+
+\DeclareFontShape{LY1}{Inter-TLF}{semibold}{n}{
+      <-> alias * Inter-TLF/sb/n
+}{}
+
+\DeclareFontShape{LY1}{Inter-TLF}{sb}{sl}{
+    <-> ssub * Inter-TLF/sb/it
+}{}
+
+\DeclareFontShape{LY1}{Inter-TLF}{semibold}{sl}{
+    <-> ssub * Inter-TLF/semibold/it
 }{}
 
 
@@ -257,12 +257,12 @@
       <-> ssub * Inter-TLF/b/n
 }{}
 
-\DeclareFontShape{LY1}{Inter-TLF}{bx}{sl}{
-      <-> ssub * Inter-TLF/b/sl
-}{}
-
 \DeclareFontShape{LY1}{Inter-TLF}{bx}{it}{
       <-> ssub * Inter-TLF/b/it
+}{}
+
+\DeclareFontShape{LY1}{Inter-TLF}{bx}{sl}{
+      <-> ssub * Inter-TLF/b/sl
 }{}
 
 \endinput

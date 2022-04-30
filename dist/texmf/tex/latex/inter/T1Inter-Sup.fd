@@ -20,75 +20,6 @@
 \DeclareFontFamily{T1}{Inter-Sup}{}
 
 
-%   ----  l = light  ----
-
-\DeclareFontShape{T1}{Inter-Sup}{l}{it}{
-      <-> \Inter@@scale Inter-LightItalic-sup-t1
-}{}
-
-\DeclareFontShape{T1}{Inter-Sup}{light}{it}{
-      <-> alias * Inter-Sup/l/it
-}{}
-
-\DeclareFontShape{T1}{Inter-Sup}{l}{n}{
-      <-> \Inter@@scale Inter-Light-sup-t1
-}{}
-
-\DeclareFontShape{T1}{Inter-Sup}{light}{n}{
-      <-> alias * Inter-Sup/l/n
-}{}
-
-\DeclareFontShape{T1}{Inter-Sup}{l}{sl}{
-    <-> ssub * Inter-Sup/l/it
-}{}
-
-\DeclareFontShape{T1}{Inter-Sup}{light}{sl}{
-    <-> ssub * Inter-Sup/light/it
-}{}
-
-
-%   ----  medium  ----
-
-\DeclareFontShape{T1}{Inter-Sup}{medium}{n}{
-      <-> \Inter@@scale Inter-Medium-sup-t1
-}{}
-
-\DeclareFontShape{T1}{Inter-Sup}{medium}{it}{
-      <-> \Inter@@scale Inter-MediumItalic-sup-t1
-}{}
-
-\DeclareFontShape{T1}{Inter-Sup}{medium}{sl}{
-    <-> ssub * Inter-Sup/medium/it
-}{}
-
-
-%   ----  m = regular  ----
-
-\DeclareFontShape{T1}{Inter-Sup}{m}{n}{
-      <-> \Inter@@scale Inter-Regular-sup-t1
-}{}
-
-\DeclareFontShape{T1}{Inter-Sup}{regular}{n}{
-      <-> alias * Inter-Sup/m/n
-}{}
-
-\DeclareFontShape{T1}{Inter-Sup}{m}{it}{
-      <-> \Inter@@scale Inter-Italic-sup-t1
-}{}
-
-\DeclareFontShape{T1}{Inter-Sup}{regular}{it}{
-      <-> alias * Inter-Sup/m/it
-}{}
-
-\DeclareFontShape{T1}{Inter-Sup}{m}{sl}{
-    <-> ssub * Inter-Sup/m/it
-}{}
-
-\DeclareFontShape{T1}{Inter-Sup}{regular}{sl}{
-    <-> ssub * Inter-Sup/regular/it
-}{}
-
-
 %   ----  ub = black  ----
 
 \DeclareFontShape{T1}{Inter-Sup}{ub}{n}{
@@ -143,6 +74,48 @@
 }{}
 
 
+%   ----  ul = thin  ----
+
+\DeclareFontShape{T1}{Inter-Sup}{ul}{it}{
+      <-> \Inter@@scale Inter-ThinItalic-sup-t1
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{thin}{it}{
+      <-> alias * Inter-Sup/ul/it
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{ul}{n}{
+      <-> \Inter@@scale Inter-Thin-sup-t1
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{thin}{n}{
+      <-> alias * Inter-Sup/ul/n
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{ul}{sl}{
+    <-> ssub * Inter-Sup/ul/it
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{thin}{sl}{
+    <-> ssub * Inter-Sup/thin/it
+}{}
+
+
+%   ----  medium  ----
+
+\DeclareFontShape{T1}{Inter-Sup}{medium}{n}{
+      <-> \Inter@@scale Inter-Medium-sup-t1
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{medium}{it}{
+      <-> \Inter@@scale Inter-MediumItalic-sup-t1
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{medium}{sl}{
+    <-> ssub * Inter-Sup/medium/it
+}{}
+
+
 %   ----  el = extralight  ----
 
 \DeclareFontShape{T1}{Inter-Sup}{el}{it}{
@@ -172,20 +145,20 @@
 
 %   ----  b = bold  ----
 
-\DeclareFontShape{T1}{Inter-Sup}{b}{it}{
-      <-> \Inter@@scale Inter-BoldItalic-sup-t1
-}{}
-
-\DeclareFontShape{T1}{Inter-Sup}{bold}{it}{
-      <-> alias * Inter-Sup/b/it
-}{}
-
 \DeclareFontShape{T1}{Inter-Sup}{b}{n}{
       <-> \Inter@@scale Inter-Bold-sup-t1
 }{}
 
 \DeclareFontShape{T1}{Inter-Sup}{bold}{n}{
       <-> alias * Inter-Sup/b/n
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{b}{it}{
+      <-> \Inter@@scale Inter-BoldItalic-sup-t1
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{bold}{it}{
+      <-> alias * Inter-Sup/b/it
 }{}
 
 \DeclareFontShape{T1}{Inter-Sup}{b}{sl}{
@@ -197,42 +170,61 @@
 }{}
 
 
-%   ----  ul = thin  ----
+%   ----  m = regular  ----
 
-\DeclareFontShape{T1}{Inter-Sup}{ul}{it}{
-      <-> \Inter@@scale Inter-ThinItalic-sup-t1
+\DeclareFontShape{T1}{Inter-Sup}{m}{n}{
+      <-> \Inter@@scale Inter-Regular-sup-t1
 }{}
 
-\DeclareFontShape{T1}{Inter-Sup}{thin}{it}{
-      <-> alias * Inter-Sup/ul/it
+\DeclareFontShape{T1}{Inter-Sup}{regular}{n}{
+      <-> alias * Inter-Sup/m/n
 }{}
 
-\DeclareFontShape{T1}{Inter-Sup}{ul}{n}{
-      <-> \Inter@@scale Inter-Thin-sup-t1
+\DeclareFontShape{T1}{Inter-Sup}{m}{it}{
+      <-> \Inter@@scale Inter-Italic-sup-t1
 }{}
 
-\DeclareFontShape{T1}{Inter-Sup}{thin}{n}{
-      <-> alias * Inter-Sup/ul/n
+\DeclareFontShape{T1}{Inter-Sup}{regular}{it}{
+      <-> alias * Inter-Sup/m/it
 }{}
 
-\DeclareFontShape{T1}{Inter-Sup}{ul}{sl}{
-    <-> ssub * Inter-Sup/ul/it
+\DeclareFontShape{T1}{Inter-Sup}{m}{sl}{
+    <-> ssub * Inter-Sup/m/it
 }{}
 
-\DeclareFontShape{T1}{Inter-Sup}{thin}{sl}{
-    <-> ssub * Inter-Sup/thin/it
+\DeclareFontShape{T1}{Inter-Sup}{regular}{sl}{
+    <-> ssub * Inter-Sup/regular/it
+}{}
+
+
+%   ----  l = light  ----
+
+\DeclareFontShape{T1}{Inter-Sup}{l}{n}{
+      <-> \Inter@@scale Inter-Light-sup-t1
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{light}{n}{
+      <-> alias * Inter-Sup/l/n
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{l}{it}{
+      <-> \Inter@@scale Inter-LightItalic-sup-t1
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{light}{it}{
+      <-> alias * Inter-Sup/l/it
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{l}{sl}{
+    <-> ssub * Inter-Sup/l/it
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{light}{sl}{
+    <-> ssub * Inter-Sup/light/it
 }{}
 
 
 %   ----  sb = semibold  ----
-
-\DeclareFontShape{T1}{Inter-Sup}{sb}{n}{
-      <-> \Inter@@scale Inter-SemiBold-sup-t1
-}{}
-
-\DeclareFontShape{T1}{Inter-Sup}{semibold}{n}{
-      <-> alias * Inter-Sup/sb/n
-}{}
 
 \DeclareFontShape{T1}{Inter-Sup}{sb}{it}{
       <-> \Inter@@scale Inter-SemiBoldItalic-sup-t1
@@ -240,6 +232,14 @@
 
 \DeclareFontShape{T1}{Inter-Sup}{semibold}{it}{
       <-> alias * Inter-Sup/sb/it
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{sb}{n}{
+      <-> \Inter@@scale Inter-SemiBold-sup-t1
+}{}
+
+\DeclareFontShape{T1}{Inter-Sup}{semibold}{n}{
+      <-> alias * Inter-Sup/sb/n
 }{}
 
 \DeclareFontShape{T1}{Inter-Sup}{sb}{sl}{
@@ -253,16 +253,16 @@
 
 %   ----  Extra 'ssub' rules to map 'bx' to 'b'  ----
 
-\DeclareFontShape{T1}{Inter-Sup}{bx}{it}{
-      <-> ssub * Inter-Sup/b/it
+\DeclareFontShape{T1}{Inter-Sup}{bx}{n}{
+      <-> ssub * Inter-Sup/b/n
 }{}
 
 \DeclareFontShape{T1}{Inter-Sup}{bx}{sl}{
       <-> ssub * Inter-Sup/b/sl
 }{}
 
-\DeclareFontShape{T1}{Inter-Sup}{bx}{n}{
-      <-> ssub * Inter-Sup/b/n
+\DeclareFontShape{T1}{Inter-Sup}{bx}{it}{
+      <-> ssub * Inter-Sup/b/it
 }{}
 
 \endinput
