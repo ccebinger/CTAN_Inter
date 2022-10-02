@@ -1,0 +1,214 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.11)  2 OCT 2022 15:24
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**inter-samples.tex
+(./inter-samples.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-01-09> xparse <2020-03-03>
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@section=\count178
+\c@subsection=\count179
+\c@subsubsection=\count180
+\c@paragraph=\count181
+\c@subparagraph=\count182
+\c@figure=\count183
+\c@table=\count184
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/inter/inter.sty
+Package: inter 2020/12/16 (Carl-Clemens Ebinger and autoinst) Style file for In
+ter fonts.
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count185
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-01-09 L3 programming layer (loader) 
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count186
+\l__pdf_internal_box=\box47
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-10-27 L3 Experimental document command parser
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.
+tex))
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+))
+LaTeX Font Info:    Trying to load font information for T1+Inter-LF on input li
+ne 5.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/inter/T1Inter-LF.fd
+File: T1Inter-LF.fd 2020/12/22 (autoinst) Font definitions for T1/Inter-LF.
+)
+LaTeX Font Info:    Font shape `T1/Inter-LF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+
+No file inter-samples.aux.
+\openout1 = `inter-samples.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+\c@mv@tabular=\count187
+\c@mv@boldtabular=\count188
+LaTeX Font Info:    Font shape `T1/Inter-LF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 7.
+LaTeX Font Info:    Font shape `T1/Inter-LF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 7.
+LaTeX Font Info:    Font shape `T1/Inter-LF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 13.
+
+Overfull \hbox (13.41945pt too wide) in paragraph at lines 13--14
+\T1/Inter-LF/b/n/10 nasce-tur ridicu-lus mus. Ali-quam tin-cidunt urna. Nulla u
+l-lam-cor-per vestibu-
+ []
+
+LaTeX Font Info:    Font shape `T1/Inter-LF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 18.
+LaTeX Font Info:    Font shape `T1/Inter-LF/b/it' will be
+(Font)              scaled to size 10.0pt on input line 22.
+[1
+
+{/home/carl-clemens/.texlive2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/Inter-LF/thin/n' aliased to
+(Font)              `T1/Inter-LF/ul/n' on input line 27.
+LaTeX Font Info:    Font shape `T1/Inter-LF/ul/n' will be
+(Font)              scaled to size 10.0pt on input line 27.
+LaTeX Font Info:    Font shape `T1/Inter-LF/l/n' will be
+(Font)              scaled to size 10.0pt on input line 31.
+
+Overfull \hbox (3.2947pt too wide) in paragraph at lines 31--32
+\T1/Inter-LF/l/n/10 Suspendisse vel fe-lis. Ut lorem lorem, in-ter-dum eu, tin-
+cidunt sit amet, laoreet
+ []
+
+LaTeX Font Info:    Font shape `T1/Inter-LF/el/n' will be
+(Font)              scaled to size 10.0pt on input line 35.
+LaTeX Font Info:    Font shape `T1/Inter-LF/medium/n' will be
+(Font)              scaled to size 10.0pt on input line 38.
+
+Overfull \hbox (10.36067pt too wide) in paragraph at lines 38--39
+\T1/Inter-LF/medium/n/10 Pellentesque habi-tant morbi tris-tique senec-tus et n
+e-tus et male-suada fames
+ []
+
+[2]
+LaTeX Font Info:    Font shape `T1/Inter-LF/sb/n' will be
+(Font)              scaled to size 10.0pt on input line 41.
+LaTeX Font Info:    Font shape `T1/Inter-LF/eb/n' will be
+(Font)              scaled to size 10.0pt on input line 44.
+
+Overfull \hbox (1.91922pt too wide) in paragraph at lines 44--45
+\T1/Inter-LF/eb/n/10 Suspendisse vi-tae elit. Ali-quam arcu neque, ornare in, u
+l-lam-cor-per quis,
+ []
+
+LaTeX Font Info:    Font shape `T1/Inter-LF/ub/n' will be
+(Font)              scaled to size 10.0pt on input line 47.
+
+Overfull \hbox (20.27415pt too wide) in paragraph at lines 47--48
+\T1/Inter-LF/ub/n/10 montes, nasce-tur ridicu-lus mus. Ut pel-len-tesque au-gue
+ sed urna. Vestibu-
+ []
+
+[3]
+LaTeX Font Info:    Trying to load font information for T1+Inter-TLF on input l
+ine 54.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/inter/T1Inter-TLF.fd
+File: T1Inter-TLF.fd 2020/12/22 (autoinst) Font definitions for T1/Inter-TLF.
+)
+LaTeX Font Info:    Font shape `T1/Inter-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 54.
+
+[4] (./inter-samples.aux) ) 
+Here is how much of TeX's memory you used:
+ 1638 strings out of 479304
+ 30468 string characters out of 5867266
+ 559865 words of memory out of 5000000
+ 18829 multiletter control sequences out of 15000+600000
+ 500108 words of font info for 55 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 68i,4n,75p,199b,184s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/
+inter/a_nkgz7y.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/inter/a_
+zasxrl.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/inter/Inter-B
+lack.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/inter/Inter-Bol
+d.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/inter/Inter-BoldIt
+alic.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/inter/Inter-Ext
+raBold.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/inter/Inter-E
+xtraLight.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/inter/Inte
+r-Italic.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/inter/Inter
+-Light.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/inter/Inter-M
+edium.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/inter/Inter-Re
+gular.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/inter/Inter-Se
+miBold.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/inter/Inter-T
+hin.pfb>
+Output written on inter-samples.pdf (4 pages, 165712 bytes).
+PDF statistics:
+ 65 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,7 +1,7 @@
-This is the README for the inter package, version 2020/12/23.
+This is the README for the inter package, version 2022/10/02.
 
 This package provides LaTeX, pdfLaTeX, XeLaTeX and LuaLaTeX
-support for the Inter Sans family of fonts (version 3.015),
+support for the Inter Sans family of fonts (version 3.19),
 designed by Rasmus Andersson. Inter is a typeface specially
 designed for user interfaces with focus on high legibility
 of small-to-medium sized text on computer screens. The

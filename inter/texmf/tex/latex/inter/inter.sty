@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{inter}
-    [2020/12/16 (Carl-Clemens Ebinger and autoinst)  Style file for Inter fonts.]
+    [2022/10/02 (Carl-Clemens Ebinger and autoinst)  Style file for Inter fonts.]
 
 \RequirePackage{ifxetex,ifluatex,xkeyval,textcomp}
 
@@ -101,7 +101,7 @@
 
 \ifinter@otf
   \def\inter@regular{Regular}
-  \ifxetex\XeTeXtracingfonts=1\fi
+%  \ifxetex\XeTeXtracingfonts=1\fi
   \defaultfontfeatures{
         Ligatures = TeX ,
         Scale     = \Inter@scale ,
