@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_g6if7q2nhml6mnjw2vxtczinpc
-% Encoding created by otftotfm on Tue Dec 22 13:12:11 2020
+% Encoding created by otftotfm on Fri Sep  8 09:52:09 2023
 % Command line follows encoding
 /AutoEnc_g6if7q2nhml6mnjw2vxtczinpc [
 %00
@@ -54,11 +54,11 @@
   /uni00F8 /uni00F9 /uni00FA /uni00FB /uni00FC /uni00FD /uni00FE /uni00DF
 ] def
 % Command line: 'otftotfm --automatic --encoding=fontools_t1
-% --tfm-directory=texmf.0.0.2/fonts/tfm/public/inter
-% --vf-directory=texmf.0.0.2/fonts/vf/public/inter
-% --type1-directory=texmf.0.0.2/fonts/type1/public/inter
-% --encoding-directory=texmf.0.0.2/fonts/enc/dvips/inter
-% --map-file=texmf.0.0.2/fonts/map/dvips/inter/Inter.map --no-updmap --force
+% --tfm-directory=texmf/fonts/tfm/public/inter
+% --vf-directory=texmf/fonts/vf/public/inter
+% --type1-directory=texmf/fonts/type1/public/inter
+% --encoding-directory=texmf/fonts/enc/dvips/inter
+% --map-file=texmf/fonts/map/dvips/inter/Inter.map --no-updmap --force
 % --coding-scheme=EXTENDED TEX FONT ENCODING - LATIN --feature=sups
-% --ligkern=* {KL} * Inter Desktop/Inter-BlackItalic.otf
+% --ligkern=* {KL} * ../Inter Desktop/Inter-BlackItalic.otf
 % Inter-BlackItalic-sup-t1'

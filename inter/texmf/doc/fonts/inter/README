@@ -1,4 +1,4 @@
-This is the README for the inter package, version 2022/10/02.
+This is the README for the inter package, version 2023/10/07.
 
 This package provides LaTeX, pdfLaTeX, XeLaTeX and LuaLaTeX
 support for the Inter Sans family of fonts (version 3.19),
@@ -28,12 +28,16 @@ The default figure style is proportional-lining, but the
 tabular (or t) option will change the default to tabular
 (monospaced) figures.
 
-Font encodings supported are OT1, T1, TS1, and LY1.
+Font encodings supported are OT1, T1, TS1, LY1 and LGR.
 
 The semibold, extrabold and heavy options activate those
 series as the default bold series. The medium, light,
 extralight and thin options activate those series as the
 default regular series.
+
+There are also math letters supported. The greek Ypsilon
+differs from latin Y. \varepsilon and \varphi are also
+supported.
 
 Commands \intertabular, and \interproportional allow for
 localized use of non-default figures. Superior numbers are

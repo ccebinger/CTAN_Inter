@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_bal5qfh23c262ohkpn4btx7ukf
-% Encoding created by otftotfm on Tue Dec 22 13:12:11 2020
+% Encoding created by otftotfm on Sat Oct  7 14:39:47 2023
 % Command line follows encoding
 /AutoEnc_bal5qfh23c262ohkpn4btx7ukf [
 %00
@@ -54,10 +54,11 @@
   /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
 ] def
 % Command line: 'otftotfm --automatic --encoding=fontools_ts1
-% --tfm-directory=texmf.0.0.2/fonts/tfm/public/inter
-% --vf-directory=texmf.0.0.2/fonts/vf/public/inter
-% --type1-directory=texmf.0.0.2/fonts/type1/public/inter
-% --encoding-directory=texmf.0.0.2/fonts/enc/dvips/inter
-% --map-file=texmf.0.0.2/fonts/map/dvips/inter/Inter.map --no-updmap --force
-% --coding-scheme=TEX TEXT COMPANION SYMBOLS 1---TS1 --feature=pnum Inter
-% Desktop/Inter-BlackItalic.otf Inter-BlackItalic-lf-ts1'
+% --tfm-directory=../inter_20230908/texmf/fonts/tfm/public/inter
+% --vf-directory=../inter_20230908/texmf/fonts/vf/public/inter
+% --type1-directory=../inter_20230908/texmf/fonts/type1/public/inter
+% --encoding-directory=../inter_20230908/texmf/fonts/enc/dvips/inter
+% --map-file=../inter_20230908/texmf/fonts/map/dvips/inter/Inter.map
+% --no-updmap --force --coding-scheme=TEX TEXT COMPANION SYMBOLS 1---TS1
+% --feature=pnum -fcv05 -fcv07 -fss01 --unicoding Upsilon =:
+% Upsilonhooksymbol Inter-BlackItalic.otf Inter-BlackItalic-lf-ts1'

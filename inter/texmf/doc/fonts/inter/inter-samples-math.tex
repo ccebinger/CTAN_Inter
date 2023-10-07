@@ -1,0 +1,45 @@
+\documentclass[10pt]{article}
+
+%\usepackage[sfmath]{kpfonts}
+\usepackage[math]{iwona}
+%\usepackage[math]{kurier}
+\usepackage[T1,LGR]{fontenc}
+\usepackage[math, math-style=ISO,tabular, scale = 0.85]{inter}
+\usepackage[utf8]{inputenc}
+\usepackage[protrusion=compatibility, expansion=false, kerning=true]{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+\DeclareMathSymbol{\upGamma}{\mathalpha}{newoperators}{"00}
+\DeclareMathSymbol{\itGamma}{\mathalpha}{newletters}  {"00}
+\DeclareMathSymbol{\upDelta}{\mathalpha}{newoperators}{"01}
+\DeclareMathSymbol{\itDelta}{\mathalpha}{newletters}  {"01}
+
+%\usepackage[italic, LGRgreek]{mathastext}
+%\usepackage[font=Inter-LF]{lgrmath}
+
+\newcommand{\testtext}{%
+	Hello, I'm ``Inter'': Ääöüß 1234567890--O. ¿They offered an efficient final workflow!
+	$$f(x) = \left( \frac{\alpha \, a \, x^2}{g\,\gamma\,y} \right) + \left[ \int_{-\infty}^{\infty} 3 \times v \, \mathrm{d}v \right] - I / l.$$\par
+	$\alpha\ \beta\ \delta\ \epsilon\ \varepsilon\ \zeta\ \eta\ \theta\ \vartheta\ \iota\ \kappa\ \lambda\ \mu\ \nu\ \xi\ o\ \pi\ \varpi\ \rho\ \varrho\ \sigma\ \varsigma\ \tau\ \upsilon\ \phi\ \varphi\ \chi\ \psi\ \omega$ \par
+	%$\Alpha\ \Beta\ \Delta\ \Epsilon\ \Zeta\ \Eta\ \Theta\ \Iota\ \Kappa\ \Lambda\ \Mu\ \Nu\ \Xi\ O\ \Pi\ \Rho\ \Sigma\ \Tau\ \Upsilon\ \Phi\ \Chi\ \Psi\ \Omega$ \par
+	$\Delta\ \Theta\ \Lambda\ \Xi\ \Pi\ \Sigma\ \Upsilon\ \Phi\ \Psi\ \Omega$ \par
+	{\fontencoding{LGR}\selectfont a b g d e z h j i k l m n x o p r s c t u f q y w.}\par
+	{\fontencoding{LGR}\selectfont A B G D E Z H J I K L M N X O P R S T U F Q Y W.}\par
+	\bigskip
+	$\upDelta x$ $\itDelta$ $\upGamma(n)$ $\upGamma(z)$ $\itGamma$ $a \alpha$, $p \rho$, $u \upsilon$, $v \nu$, $y \gamma$
+	\bigskip
+}
+
+\begin{document}
+
+\noindent\testtext
+
+\noindent\textit{\testtext}
+
+\boldmath
+
+\noindent\textbf{\testtext}
+
+\noindent\textit{\textbf{\testtext}}
+
+\end{document}
