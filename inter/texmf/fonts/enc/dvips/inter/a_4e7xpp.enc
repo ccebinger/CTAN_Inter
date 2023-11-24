@@ -1,0 +1,66 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_4e7xpp2i4jg4ay76aez2tvxwae
+% Encoding created by otftotfm on Fri Nov 24 10:42:41 2023
+% Command line follows encoding
+/AutoEnc_4e7xpp2i4jg4ay76aez2tvxwae [
+%00
+  /Gamma /uni0394 /Theta /Lambda /Xi /Pi /Sigma /uni03D2
+  /Phi /Psi /uni03A9 /.notdef /.notdef /.notdef /.notdef /.notdef
+%10
+  /dotlessi /uni0237 /grave /acute /caron /breve /macron /ring
+  /cedilla /.notdef /ae /oe.sc /oslash /AE /OE /Oslash
+%20
+  /space.tf /exclam /quotedblright /numbersign /dollar /percent /ampersand /quoteright
+  /parenleft.tf /parenright.tf /asterisk.tf /plus.tf /comma.tf /hyphen.tf /period.tf /slash
+%30
+  /zero.tf /one.tf /two.tf /three.1.tf /four.tf.ss01 /five.tf /six.tf.ss01 /seven.tf
+  /eight.tf /nine.tf.ss01 /colon.tf /semicolon.tf /exclamdown /equal.tf /questiondown /question
+%40
+  /at /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft.tf /quotedblleft /bracketright.tf /circumflex /dotaccent
+%60
+  /quoteleft /a.sc /b /c /d /e /f /g.sc
+  /h.sc /i.sc /j /k /l.ss02 /m.sc /n.sc /o
+%70
+  /p /q /r.sc /s /t.sc /u /v /w
+  /x /y.sc /z /endash /emdash /hungarumlaut /tilde /dieresis
+%80
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /Lslash /.notdef /.notdef /.notdef /.notdef /.notdef
+%90
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%A0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /lslash.ss02 /.notdef /.notdef /.notdef /.notdef /.notdef
+%B0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+% Command line: 'otftotfm --automatic --encoding=fontools_ot1
+% --tfm-directory=../../texmf/fonts/tfm/public/inter
+% --vf-directory=../../texmf/fonts/vf/public/inter
+% --type1-directory=../../texmf/fonts/type1/public/inter
+% --encoding-directory=../../texmf/fonts/enc/dvips/inter
+% --map-file=../../texmf/fonts/map/dvips/inter/Inter.map --no-updmap --force
+% --coding-scheme=TEX TEXT --feature=kern --feature=smcp --feature=tnum
+% --unicoding=germandbls =: SSsmall --unicoding=ff =: FFsmall --unicoding=fi
+% =: FIsmall --unicoding=ffi =: FFIsmall --unicoding=fl =: FLsmall
+% --unicoding=ffl =: FFLsmall -fcv05 -fcv07 -fss01 --unicoding Upsilon =:
+% Upsilonhooksymbol Inter-BlackItalic.otf Inter-BlackItalic-tlf-sc-ot1'

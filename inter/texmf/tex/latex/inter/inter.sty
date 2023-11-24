@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{inter}
-    [2023/10/07 (Carl-Clemens Ebinger & autoinst)  Style file for inter fonts.]
+    [2023/11/23 (Carl-Clemens Ebinger & autoinst)  Style file for inter fonts (Inter v.4.0)]
 
 \RequirePackage{ifxetex,ifluatex,textcomp,xkeyval}
 
@@ -14,7 +14,7 @@
   \inter@otffalse
 \fi\fi
 
-\newif\ifinter@tabular \inter@tabularfalse
+\newif\ifinter@tabular \inter@tabulartrue
 
 \newif\ifinter@medium  \inter@mediumfalse
 \newif\ifinter@semibold  \inter@semiboldfalse
@@ -35,7 +35,7 @@
 \DeclareOptionX{lining}{\inter@liningtrue}
 \DeclareOptionX{tabular}{\inter@tabulartrue}
 \DeclareOptionX{t}{\inter@tabulartrue}
-\DeclareOptionX{proportional}{\edef\Inter@figurealign{}}
+\DeclareOptionX{proportional}{\edef\Inter@figurealign{}\inter@tabularfalse}
 \edef\Inter@figurestyle{LF}
 \edef\Inter@figurealign{}
 
@@ -122,8 +122,9 @@
 \fi
 
 \ifinter@otf
-  \RequirePackage[T1,LY1,LGR]{fontspec}
+  \RequirePackage{fontspec}
 \else
+  \RequirePackage[LGR,LY1,T1]{fontenc}
   \RequirePackage{mweights,fontaxes}
   \RequirePackage{ifthen}
 \fi

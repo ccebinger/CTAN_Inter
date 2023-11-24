@@ -1,0 +1,64 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_eou4762337ity32achn63gtfte
+% Encoding created by otftotfm on Fri Nov 24 10:42:36 2023
+% Command line follows encoding
+/AutoEnc_eou4762337ity32achn63gtfte [
+%00
+  /.notdef /Euro /.notdef /.notdef /fraction /dotaccent /hungarumlaut /ogonek
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%10
+  /dotlessi /uni0237 /grave /acute /caron /breve /macron /ring
+  /cedilla /germandbls.1 /ae /oe /oslash /AE /OE /Oslash
+%20
+  /space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright
+  /parenleft.sups /parenright.sups /asterisk /plus.sups /comma /hyphen /period /slash
+%30
+  /zero.sups /one.sups /two.sups /three.sups.ss01 /four.sups.ss01 /five.sups /six.sups.ss01 /seven.sups
+  /eight.sups /nine.sups.ss01 /colon /semicolon /less /equal.sups /greater /question
+%40
+  /at /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft.sups /backslash /bracketright.sups /circumflex /underscore
+%60
+  /quoteleft /a.sups /b.sups /c.sups /d.sups /e.sups /f.sups /g.sups
+  /h.sups /i.sups /j.sups /k.sups /l.sups /m.sups /n.sups /o.sups
+%70
+  /p.sups /q.sups /r.sups /s.sups /t.sups /u.sups /v.sups /w.sups
+  /x.sups /y.sups /z.sups /braceleft /bar /braceright /tilde /dieresis
+%80
+  /Lslash /quotesingle /quotesinglbase /florin /quotedblbase /ellipsis /dagger /daggerdbl
+  /circumflex /perthousand /Scaron /guilsinglleft /OE /Zcaron /asciicircum /minus.sups
+%90
+  /lslash.ss02 /quoteleft /quoteright /quotedblleft /quotedblright /bullet /endash /emdash
+  /tilde /trademark /scaron /guilsinglright /oe /zcaron /asciitilde /Ydieresis
+%A0
+  /.notdef /exclamdown /cent /sterling /currency /yen /brokenbar /section
+  /dieresis /copyright /ordfeminine /guillemotleft /logicalnot /.notdef /registered /macron
+%B0
+  /degree /plusminus /two.sups /three.sups.ss01 /acute /uni00B5 /paragraph /periodcentered
+  /cedilla /one.sups /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+%C0
+  /Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+  /Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+%D0
+  /Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+  /Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls.1
+%E0
+  /agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+  /egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+%F0
+  /eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+  /oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis
+] def
+% Command line: 'otftotfm --automatic --encoding=fontools_ly1
+% --tfm-directory=../../texmf/fonts/tfm/public/inter
+% --vf-directory=../../texmf/fonts/vf/public/inter
+% --type1-directory=../../texmf/fonts/type1/public/inter
+% --encoding-directory=../../texmf/fonts/enc/dvips/inter
+% --map-file=../../texmf/fonts/map/dvips/inter/Inter.map --no-updmap --force
+% --coding-scheme=TEX TYPEWRITER AND WINDOWS ANSI --feature=sups --ligkern=*
+% {KL} * -fcv05 -fcv07 -fss01 --unicoding Upsilon =: Upsilonhooksymbol
+% Inter-BlackItalic.otf Inter-BlackItalic-sup-ly1'

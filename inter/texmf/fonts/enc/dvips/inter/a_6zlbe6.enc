@@ -1,0 +1,64 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_6zlbe6ok7xoidlksopcqiylpgd
+% Encoding created by otftotfm on Fri Nov 24 10:42:41 2023
+% Command line follows encoding
+/AutoEnc_6zlbe6ok7xoidlksopcqiylpgd [
+%00
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /cedilla /ogonek /quotesinglbase /asterisk.tf /bar
+%10
+  /endash /.notdef /quotedblbase /.notdef /.notdef /.notdef /.notdef /.notdef
+  /arrowleft /arrowright /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%20
+  /spaceopenbox /.notdef /.notdef /.notdef /dollar /.notdef /.notdef /quotesingle
+  /.notdef /.notdef /.notdef /.notdef /comma.tf /.notdef /period.tf /fraction
+%30
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /minus.tf /.notdef /.notdef
+%40
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%50
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni03A9
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /arrowup /arrowdown
+%60
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%70
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%80
+  /.notdef /.notdef /.notdef /.notdef /dagger /daggerdbl /.notdef /perthousand
+  /bullet /degreecentigrade /.notdef /.notdef /florin /coloncurrency /uni20A9 /.notdef
+%90
+  /.notdef /.notdef /lira /.notdef /uni203D /uni2E18 /dong /trademark
+  /uni2031 /.notdef /.notdef /uni2116 /.notdef /estimated /openbullet /.notdef
+%A0
+  /.notdef /.notdef /cent /sterling /currency /yen /brokenbar /section
+  /.notdef /copyright /ordfeminine /copyleft /logicalnot /.notdef /registered /.notdef
+%B0
+  /degree /plusminus.tf /two.sups /three.sups.ss01 /.notdef /uni00B5 /paragraph /periodcentered
+  /uni203B /one.sups /ordmasculine /radical /onequarter /onehalf /threequarters /Euro
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /multiply.tf /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /divide.tf /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+% Command line: 'otftotfm --automatic --encoding=fontools_ts1
+% --tfm-directory=../../texmf/fonts/tfm/public/inter
+% --vf-directory=../../texmf/fonts/vf/public/inter
+% --type1-directory=../../texmf/fonts/type1/public/inter
+% --encoding-directory=../../texmf/fonts/enc/dvips/inter
+% --map-file=../../texmf/fonts/map/dvips/inter/Inter.map --no-updmap --force
+% --coding-scheme=TEX TEXT COMPANION SYMBOLS 1---TS1 --feature=tnum -fcv05
+% -fcv07 -fss01 --unicoding Upsilon =: Upsilonhooksymbol
+% Inter-BlackItalic.otf Inter-BlackItalic-tlf-ts1'

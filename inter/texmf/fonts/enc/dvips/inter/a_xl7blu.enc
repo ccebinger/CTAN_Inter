@@ -1,0 +1,67 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_xl7blufdha3sc4jcl2qxjdkooh
+% Encoding created by otftotfm on Fri Nov 24 10:42:38 2023
+% Command line follows encoding
+/AutoEnc_xl7blufdha3sc4jcl2qxjdkooh [
+%00
+  /grave /acute /circumflex /tilde /dieresis /hungarumlaut /ring /caron
+  /breve /macron /dotaccent /cedilla /ogonek /quotesinglbase /guilsinglleft /guilsinglright
+%10
+  /quotedblleft /quotedblright /quotedblbase /guillemotleft /guillemotright /endash /emdash /.notdef
+  /.notdef /dotlessi /uni0237 /.notdef /.notdef /.notdef /.notdef /.notdef
+%20
+  /space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright
+  /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%30
+  /zero /one /two /three.1 /four.ss01 /five /six.ss01 /seven
+  /eight /nine.ss01 /colon /semicolon /less /equal /greater /question
+%40
+  /at /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+%60
+  /quoteleft /a.sc /b /c /d /e /f /g.sc
+  /h.sc /i.sc /j /k /l.ss02 /m.sc /n.sc /o
+%70
+  /p /q /r.sc /s /t.sc /u /v /w
+  /x /y.sc /z /braceleft /bar /braceright /asciitilde /hyphen
+%80
+  /Abreve /Aogonek /Cacute /Ccaron /Dcaron /Ecaron /Eogonek /Gbreve
+  /Lacute /Lcaron /Lslash /Nacute /Ncaron /Eng /Ohungarumlaut /Racute
+%90
+  /Rcaron /Sacute /Scaron /Scedilla /Tcaron /uni021A /Uhungarumlaut /Uring
+  /Ydieresis /Zacute /Zcaron /Zdotaccent /IJ /Idotaccent /dcroat /section
+%A0
+  /abreve /aogonek /cacute /ccaron /dcaron /ecaron /eogonek /gbreve
+  /lacute.ss02 /lcaron.ss02 /lslash.ss02 /nacute /ncaron /eng /ohungarumlaut /racute
+%B0
+  /rcaron /sacute /scaron /scedilla /tcaron /uni0163 /uhungarumlaut /uring
+  /ydieresis /zacute /zcaron /zdotaccent /ij /exclamdown /questiondown /sterling
+%C0
+  /Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+  /Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+%D0
+  /Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /OE
+  /Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /.notdef
+%E0
+  /agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+  /egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+%F0
+  /eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /oe.sc
+  /oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /.notdef
+] def
+% Command line: 'otftotfm --automatic --encoding=fontools_t1
+% --tfm-directory=../../texmf/fonts/tfm/public/inter
+% --vf-directory=../../texmf/fonts/vf/public/inter
+% --type1-directory=../../texmf/fonts/type1/public/inter
+% --encoding-directory=../../texmf/fonts/enc/dvips/inter
+% --map-file=../../texmf/fonts/map/dvips/inter/Inter.map --no-updmap --force
+% --coding-scheme=EXTENDED TEX FONT ENCODING - LATIN --feature=kern
+% --feature=pnum --feature=smcp --unicoding=germandbls =: SSsmall
+% --unicoding=ff =: FFsmall --unicoding=fi =: FIsmall --unicoding=ffi =:
+% FFIsmall --unicoding=fl =: FLsmall --unicoding=ffl =: FFLsmall -fcv05
+% -fcv07 -fss01 --unicoding Upsilon =: Upsilonhooksymbol
+% Inter-BlackItalic.otf Inter-BlackItalic-lf-sc-t1'
