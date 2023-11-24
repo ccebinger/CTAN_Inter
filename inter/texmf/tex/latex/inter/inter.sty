@@ -247,6 +247,12 @@
 
 %%%% 2023-10-07 autoinst generated stuff for math mode.
 %%%% only for Type1
+% Logically these definitions belong inside the \ifInter@math,
+% but somehow Latex doesn't like that.
+\newif\ifInter@mathLATINup\Inter@mathLATINupfalse
+\newif\ifInter@mathlatinup\Inter@mathlatinupfalse
+\newif\ifInter@mathGREEKup\Inter@mathGREEKupfalse
+\newif\ifInter@mathgreekup\Inter@mathgreekupfalse
 \ifinter@otf
 	% TODO
 \else
@@ -293,12 +299,6 @@
 			{\rmdefault}
 			{Inter-\Inter@figurealign\Inter@figurestyle}
 
-	% Logically these definitions belong inside the \ifInter@math,
-	% but somehow Latex doesn't like that.
-	\newif\ifInter@mathLATINup\Inter@mathLATINupfalse
-	\newif\ifInter@mathlatinup\Inter@mathlatinupfalse
-	\newif\ifInter@mathGREEKup\Inter@mathGREEKupfalse
-	\newif\ifInter@mathgreekup\Inter@mathgreekupfalse
 
 	\ifInter@math
 			\ifthenelse{\equal{\Inter@mathstyle}{TeX}}
